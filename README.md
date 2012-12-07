@@ -132,7 +132,7 @@ HTML:
 <pre>
 &lt;div class="wrapper"&gt;
 
-  &lt;div id="content" class="content"&gt;
+	&lt;div id="content" class="content"&gt;
 		&lt;h1 class="title_content"&gt;Headline&lt;/h1&gt;
 		&lt;div class="box_content"&gt;Content&lt;/div&gt;
 	&lt;/div&gt;
