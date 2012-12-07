@@ -39,62 +39,6 @@ Please use IDs for Javascript. If you have to use CSS classes instead, mark it w
 <code>.js&#95;context</code> should never have CSS declarations.
 
 
-Example
--------
-
-HTML:
-
-<pre>
-&lt;div class="wrapper"&gt;
-
-  &lt;div id="content" class="content"&gt;
-		&lt;h1 class="title_content"&gt;Headline&lt;/h1&gt;
-		&lt;div class="box_content"&gt;Content&lt;/div&gt;
-	&lt;/div&gt;
-
-	&lt;div id="sidebar" class="sidebar"&gt;
-		&lt;h1 class="title_sidebar"&gt;Headline&lt;/h1&gt;
-		&lt;div class="box_sidebar"&gt;
-			&lt;ul class="list_sidebar"&gt;
-				&lt;li&gt;Item&lt;/li&gt;
-				&lt;li class="item_active"&gt;Active item&lt;/li&gt;
-				&lt;li&gt;Item&lt;/li&gt;
-			&lt;/ul&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-
-&lt;/div&gt;
-</pre>
-
-CSS:
-
-<pre>
-/* boxes */
-
-.box_content
-{
-	padding: 1em;
-}
-
-.box_sidebar
-{
-	padding: 0.5em;
-}
-
-/* titles */
-
-.title_content
-{
-	color: #555;
-}
-
-.title_sidebar
-{
-	color: #777;
-}
-</pre>
-
-
 Types
 -----
 
@@ -178,3 +122,59 @@ Structural tags are rather unsuitable to contain a type prefix:
 - header
 - nav
 - section
+
+
+Example
+-------
+
+HTML:
+
+<pre>
+&lt;div class="wrapper"&gt;
+
+  &lt;div id="content" class="content"&gt;
+		&lt;h1 class="title_content"&gt;Headline&lt;/h1&gt;
+		&lt;div class="box_content"&gt;Content&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div id="sidebar" class="sidebar"&gt;
+		&lt;h1 class="title_sidebar"&gt;Headline&lt;/h1&gt;
+		&lt;div class="box_sidebar"&gt;
+			&lt;ul class="list_sidebar"&gt;
+				&lt;li&gt;Item&lt;/li&gt;
+				&lt;li class="item_active"&gt;Active item&lt;/li&gt;
+				&lt;li&gt;Item&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+</pre>
+
+CSS:
+
+<pre>
+/* boxes */
+
+.box_content
+{
+	padding: 1em;
+}
+
+.box_sidebar
+{
+	padding: 0.5em;
+}
+
+/* titles */
+
+.title_content
+{
+	color: #555;
+}
+
+.title_sidebar
+{
+	color: #777;
+}
+</pre>
