@@ -30,7 +30,7 @@ A class name <code>.box&#95;content</code> provides the information of a styled 
 
 <strong>Wrong:</strong>
 
-<code>.context&#95;class .unspecified&#95;class</code> or reversed <code>.context&#95;type</code>
+<code>.context&#95;class .unspecified&#95;class</code> and reversed <code>.context&#95;type</code> or over specified <code>.type&#95;context&#95;description&#95;context</code>
 
 <strong>Exception:</strong>
 
