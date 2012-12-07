@@ -113,14 +113,14 @@ Types
 			<td>.box_content</td>
 		</tr>
 		<tr>
-			<td>.form</td>
-			<td>form</td>
-			<td>.form_contact</td>
-		</tr>
-		<tr>
 			<td>.field</td>
 			<td>button, input, select</td>
 			<td>.field_input</td>
+		</tr>
+		<tr>
+			<td>.form</td>
+			<td>form</td>
+			<td>.form_contact</td>
 		</tr>
 		<tr>
 			<td>.item</td>
