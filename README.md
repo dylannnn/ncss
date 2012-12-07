@@ -7,22 +7,19 @@ NCSS
 Why
 ---
 
-Massive CSS on large scaled websites used to cause general confusions.
+Massive CSS on large scaled websites used to cause problems like:
 
-Common problems are:
-
-- Multiple CSS editors without a uniform concept
+- Multiple editors without a uniform concept
 - Missing context to the website's structure and layout
-- No inline documentation
+- Lack of inline documentation
 
 
-Solution
---------
-
-NCSS tries to reflect the website's layout and structure.
+Howto
+-----
 
 A class name <code>.box&#95;content</code> provides the information of a styled <code>div</code> tag located inside a parent <code>.content</code> container.
 
+Layout and structural class names should never contain a type prefix or description suffix.
 
 <strong>Correct:</strong>
 
@@ -30,13 +27,49 @@ A class name <code>.box&#95;content</code> provides the information of a styled 
 
 <strong>Wrong:</strong>
 
-<code>.context&#95;class .unspecified&#95;class</code> and reversed <code>.context&#95;type</code> or over specified <code>.type&#95;context&#95;description&#95;context</code>
+<code>.context&#95;class .unspecified&#95;class</code> or over specified <code>.type&#95;context&#95;description&#95;name</code>
 
 <strong>Exception:</strong>
 
-Please use IDs for Javascript. If you have to use CSS classes instead, mark it with a Javascript prefix.
+Please use IDs for Javascript. If you have to use CSS classes instead, mark it with a <code>js</code> prefix.
 
-<code>.js&#95;context</code> should never have CSS declarations.
+<code>.js&#95;action</code> or <code>.js&#95;context</code>
+
+Pure CSS functional classes should marked with the <code>has</code> prefix.
+
+<code>.has&#95;action</code> or <code>.has&#95;context</code>
+
+<code>.js</code> and <code>.has</code> classes should never have CSS declarations.
+
+Layout
+-----
+
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Tags</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>.content</td>
+			<td>article, div</td>
+		</tr>
+		<tr>
+			<td>.footer</td>
+			<td>footer, div</td>
+		</tr>
+		<tr>
+			<td>.header</td>
+			<td>header, div</td>
+		</tr>
+		<tr>
+			<td>.wrapper</td>
+			<td>div</td>
+		</tr>
+	</tbody>
+</table>
 
 
 Types
@@ -45,7 +78,7 @@ Types
 <table>
 	<thead>
 		<tr>
-			<th>Type</th>
+			<th>Prefix</th>
 			<th>Tags</th>
 			<th>Example</th>
 		</tr>
@@ -105,6 +138,11 @@ Types
 			<td colspan="3">&nbsp;</td>
 		</tr>
 		<tr>
+			<td>.has</td>
+			<td>*</td>
+			<td>.has_tooltip</td>
+		</tr>
+		<tr>
 			<td>.js</td>
 			<td>*</td>
 			<td>.js_click</td>
@@ -112,7 +150,7 @@ Types
 	</tbody>
 </table>
 
-<strong>Unsuitable:</strong>
+<strong>Important:</strong>
 
 Structural tags are rather unsuitable to contain a type prefix:
 
