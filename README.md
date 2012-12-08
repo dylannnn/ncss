@@ -109,7 +109,7 @@ Syntax: <code>.type&#95;context</code> or <code>.type&#95;context&#95;descriptio
 		</tr>
 		<tr>
 			<td>.label</td>
-			<td>legend, label</td>
+			<td>label, legend</td>
 			<td>.label_search</td>
 		</tr>
 		<tr>
