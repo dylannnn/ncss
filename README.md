@@ -7,42 +7,27 @@ NCSS
 Why
 ---
 
-Massive CSS on large scaled websites used to cause problems like:
+Massive CSS on large scaled websites used to cause following issues:
 
 - Multiple editors without a uniform concept
-- Missing context to the website's structure and layout
+- Missing context to the website's layout and structure
 - Lack of inline documentation
 
 
-Howto
------
+Getting started
+---------------
 
-A class name <code>.box&#95;content</code> provides the information of a styled <code>div</code> tag located inside a parent <code>.content</code> container.
+Named Cascading Style Sheet is divided into:
 
-Layout and structural class names should never contain a type prefix or description suffix.
+- Structural classes
+- Type classes
+- Functional classes
 
-<strong>Correct:</strong>
 
-<code>.type&#95;context</code> or more specified <code>.type&#95;context&#95;description</code>
+Structural classes
+------------------
 
-<strong>Wrong:</strong>
-
-<code>.context&#95;class .unspecified&#95;class</code> or over specified <code>.type&#95;context&#95;description&#95;name</code>
-
-<strong>Exception:</strong>
-
-Please use IDs for Javascript. If you have to use CSS classes instead, mark it with a <code>js</code> prefix.
-
-<code>.js&#95;action</code> or <code>.js&#95;context</code>
-
-Pure CSS functional classes should marked with the <code>has</code> prefix.
-
-<code>.has&#95;action</code> or <code>.has&#95;context</code>
-
-<code>.js</code> and <code>.has</code> classes should never have CSS declarations.
-
-Layout
------
+Syntax: <code>.context</code>
 
 <table>
 	<thead>
@@ -58,11 +43,23 @@ Layout
 		</tr>
 		<tr>
 			<td>.footer</td>
-			<td>footer, div</td>
+			<td>div, footer</td>
 		</tr>
 		<tr>
 			<td>.header</td>
-			<td>header, div</td>
+			<td>div, header</td>
+		</tr>
+		<tr>
+			<td>.navigation</td>
+			<td>div, navi</td>
+		</tr>
+		<tr>
+			<td>.section</td>
+			<td>div, section</td>
+		</tr>
+		<tr>
+			<td>.sidebar</td>
+			<td>div, aside</td>
 		</tr>
 		<tr>
 			<td>.wrapper</td>
@@ -71,9 +68,15 @@ Layout
 	</tbody>
 </table>
 
+<strong>Important:</strong>
 
-Types
------
+Layout and structural classes should never contain a type prefix or description suffix.
+
+
+Type classes
+------------
+
+Syntax: <code>.type&#95;context</code> or <code>.type&#95;context&#95;description</code>
 
 <table>
 	<thead>
@@ -134,19 +137,6 @@ Types
 			<td>h1, h2, h3, h4, h5, h6</td>
 			<td>.title_content</td>
 		</tr>
-		<tr>
-			<td colspan="3">&nbsp;</td>
-		</tr>
-		<tr>
-			<td>.has</td>
-			<td>*</td>
-			<td>.has_tooltip</td>
-		</tr>
-		<tr>
-			<td>.js</td>
-			<td>*</td>
-			<td>.js_click</td>
-		</tr>
 	</tbody>
 </table>
 
@@ -162,8 +152,49 @@ Structural tags are rather unsuitable to contain a type prefix:
 - section
 
 
+Functional classes
+------------------
+
+Javascript related classes marked with the <code>js</code> prefix.
+
+Syntax: <code>.js&#95;action</code> or <code>.js&#95;context</code>
+
+Pure functional classes, marked with the <code>has</code> prefix.
+
+Syntax: <code>.has&#95;action</code> or <code>.has&#95;context</code>
+
+<table>
+	<thead>
+		<tr>
+			<th>Prefix</th>
+			<th>Tags</th>
+			<th>Example</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>.has</td>
+			<td>*</td>
+			<td>.has_tooltip</td>
+		</tr>
+		<tr>
+			<td>.js</td>
+			<td>*</td>
+			<td>.js_click</td>
+		</tr>
+	</tbody>
+</table>
+
+<strong>Important:</strong>
+
+Functional classes should never have CSS declarations.
+
+
 Example
 -------
+
+A class <code>.box&#95;content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.content</code> container.
+
 
 HTML:
 
@@ -180,7 +211,7 @@ HTML:
 		&lt;div class="box_sidebar"&gt;
 			&lt;ul class="list_sidebar"&gt;
 				&lt;li&gt;Item&lt;/li&gt;
-				&lt;li class="item_active"&gt;Active item&lt;/li&gt;
+				&lt;li class="js_active item_active"&gt;Active item&lt;/li&gt;
 				&lt;li&gt;Item&lt;/li&gt;
 			&lt;/ul&gt;
 		&lt;/div&gt;
@@ -216,3 +247,13 @@ CSS:
 	color: #777;
 }
 </pre>
+
+
+Conclusion
+----------
+
+The goal of NCSS is to provide additional information just by reading unknown CSS.
+
+- What elements, tags and sections are affected
+- What is the relation of one CSS class to another
+- Where to add related CSS declarations
