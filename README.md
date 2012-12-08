@@ -108,6 +108,11 @@ Syntax: <code>.type&#95;context</code> or <code>.type&#95;context&#95;descriptio
 			<td>.item_active</td>
 		</tr>
 		<tr>
+			<td>.label</td>
+			<td>legend, label</td>
+			<td>.label_search</td>
+		</tr>
+		<tr>
 			<td>.link</td>
 			<td>a</td>
 			<td>.link_action</td>
