@@ -76,7 +76,7 @@ Layout and structural classes should never contain a type prefix or description 
 Type classes
 ------------
 
-Syntax: <code>.type&#95;context</code> or <code>.type&#95;context&#95;description</code>
+Syntax: <code>.type</code>, <code>.type&#95;context</code> or <code>.type&#95;context&#95;description</code>
 
 <table>
 	<thead>
