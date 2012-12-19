@@ -23,6 +23,8 @@ Named Cascading Style Sheet is divided into:
 - Type classes
 - Functional classes
 
+There is no specification the use hyphen, underscore or camelcase for class names.
+
 
 Structural classes
 ------------------
