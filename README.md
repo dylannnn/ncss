@@ -91,7 +91,7 @@ Syntax: <code>.type</code>, <code>.type&#95;context</code> or <code>.type&#95;co
 	<tbody>
 		<tr>
 			<td>.box</td>
-			<td>blockquote, div</td>
+			<td>blockquote, div, span</td>
 			<td>.box_content</td>
 		</tr>
 		<tr>
@@ -126,7 +126,7 @@ Syntax: <code>.type</code>, <code>.type&#95;context</code> or <code>.type&#95;co
 		</tr>
 		<tr>
 			<td>.set</td>
-			<td>fieldset</td>
+			<td>div, fieldset</td>
 			<td>.set_login</td>
 		</tr>
 		<tr>
@@ -183,6 +183,11 @@ Syntax: <code>.has&#95;action</code> or <code>.has&#95;context</code>
 			<td>.has</td>
 			<td>*</td>
 			<td>.has_tooltip</td>
+		</tr>
+		<tr>
+			<td>.is</td>
+			<td>*</td>
+			<td>.is_disabled</td>
 		</tr>
 		<tr>
 			<td>.js</td>
