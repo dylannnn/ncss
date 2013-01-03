@@ -23,7 +23,7 @@ Named Cascading Style Sheet is divided into:
 - Type classes
 - Functional classes
 
-There is no specification the use hyphen, underscore or camelcase for class names.
+There is no specification the use hyphen, underscore or camelcase for class names!
 
 
 Structural classes
@@ -162,13 +162,13 @@ Structural tags are rather unsuitable to contain a type prefix:
 Functional classes
 ------------------
 
-Javascript related classes marked with the <code>js</code> prefix.
-
-Syntax: <code>.js&#95;action</code> or <code>.js&#95;context</code>
-
 Pure functional classes, marked with the <code>has</code> prefix.
 
 Syntax: <code>.has&#95;action</code> or <code>.has&#95;context</code>
+
+Javascript related classes marked with the <code>js</code> prefix.
+
+Syntax: <code>.js&#95;action</code> or <code>.js&#95;context</code>
 
 <table>
 	<thead>
