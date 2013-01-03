@@ -185,11 +185,6 @@ Syntax: <code>.has&#95;action</code> or <code>.has&#95;context</code>
 			<td>.has_tooltip</td>
 		</tr>
 		<tr>
-			<td>.is</td>
-			<td>*</td>
-			<td>.is_disabled</td>
-		</tr>
-		<tr>
 			<td>.js</td>
 			<td>*</td>
 			<td>.js_click</td>
