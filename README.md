@@ -206,12 +206,17 @@ Syntax: <code>.type&#95;position</code> and <code>.type&#95;context&#95;position
 			<td>.item_active</td>
 		</tr>
 		<tr>
+			<td>_idle</td>
+			<td>*</td>
+			<td>.item_idle</td>
+		</tr>
+		<tr>
 			<td>_hover</td>
 			<td>*</td>
 			<td>.item_hover</td>
 		</tr>
 		<tr>
-			<td>_hover</td>
+			<td>_touch</td>
 			<td>*</td>
 			<td>.item_touch</td>
 		</tr>
