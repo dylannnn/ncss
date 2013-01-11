@@ -21,6 +21,7 @@ Named Cascading Style Sheet is divided into:
 
 - Structural classes
 - Type classes
+- Abstract classes
 - Functional classes
 
 There is no specification the use hyphen, underscore or camelcase for class names!
@@ -72,13 +73,13 @@ Syntax: <code>.context</code>
 
 <strong>Important:</strong>
 
-Layout and structural classes should never contain a type prefix or description suffix.
+Layout and structural classes should never contain a type prefix or abstract suffix.
 
 
 Type classes
 ------------
 
-Syntax: <code>.type</code>, <code>.type&#95;context</code> or <code>.type&#95;context&#95;description</code>
+Syntax: <code>.type</code> and <code>.type&#95;context</code>
 
 <table>
 	<thead>
@@ -157,6 +158,102 @@ Structural tags are rather unsuitable to contain a type prefix:
 - header
 - nav
 - section
+
+
+Abstract classes
+----------------
+
+Extend with additional description:
+
+Syntax: <code>.type&#95;description</code> and <code>.type&#95;context&#95;description</code>
+
+Extend with current state:
+
+Syntax: <code>.type&#95;state</code> and <code>.type&#95;context&#95;state</code>
+
+Extend with position information:
+
+Syntax: <code>.type&#95;position</code> and <code>.type&#95;context&#95;position</code>
+
+<table>
+	<thead>
+		<tr>
+			<th>Suffix</th>
+			<th>Tags</th>
+			<th>Example</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="3">Additional description</td>
+		</tr>
+		<tr>
+			<td>_small</td>
+			<td>*</td>
+			<td>.item_small</td>
+		</tr>
+		<tr>
+			<td>_large</td>
+			<td>*</td>
+			<td>.item_large</td>
+		</tr>
+		<tr>
+			<td colspan="3">Current state</td>
+		</tr>
+		<tr>
+			<td>_active</td>
+			<td>*</td>
+			<td>.item_active</td>
+		</tr>
+		<tr>
+			<td>_hover</td>
+			<td>*</td>
+			<td>.item_hover</td>
+		</tr>
+		<tr>
+			<td>_hover</td>
+			<td>*</td>
+			<td>.item_touch</td>
+		</tr>
+		<tr>
+			<td colspan="3">Position information</td>
+		</tr>
+		<tr>
+			<td>_first</td>
+			<td>*</td>
+			<td>.item_first</td>
+		</tr>
+		<tr>
+			<td>_second</td>
+			<td>*</td>
+			<td>.item_second</td>
+		</tr>
+		<tr>
+			<td>_third</td>
+			<td>*</td>
+			<td>.item_third</td>
+		</tr>
+		<tr>
+			<td>_last</td>
+			<td>*</td>
+			<td>.item_last</td>
+		</tr>
+		<tr>
+			<td>_odd</td>
+			<td>*</td>
+			<td>.item_odd</td>
+		</tr>
+		<tr>
+			<td>_even</td>
+			<td>*</td>
+			<td>.item_even</td>
+		</tr>
+	</tbody>
+</table>
+
+<strong>Important:</strong>
+
+Proper handling of type and context should prevent the need of adjoining classes.
 
 
 Functional classes
@@ -264,3 +361,9 @@ The goal of NCSS is to provide additional information just by reading unknown CS
 - What elements, tags and sections are affected
 - What is the relation of one CSS class to another
 - Where to add related CSS declarations
+
+
+Thanks
+------
+
+[Ronny Springer](https://github.com/ronny-springer) for contribution
