@@ -17,7 +17,7 @@ Massive CSS on large scaled websites used to cause following issues:
 Getting started
 ---------------
 
-Named Cascading Style Sheet is divided into:
+Named Cascading Style Sheets are divided into:
 
 - Structural classes
 - Type classes
