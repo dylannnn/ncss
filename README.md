@@ -296,7 +296,7 @@ Syntax: <code>.js&#95;action</code> or <code>.js&#95;context</code>
 
 <strong>Important:</strong>
 
-Functional classes should never have CSS declarations.
+Functional classes should never have declarations for styling.
 
 
 Example
