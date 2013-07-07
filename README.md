@@ -1,7 +1,7 @@
 NCSS
 ====
 
-> NCSS is a draft paper about CSS naming conventions and best practices.
+> NCSS is a paper about CSS naming conventions and best practices.
 
 
 Why
