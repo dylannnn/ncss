@@ -96,8 +96,13 @@ Syntax: <code>.type</code> and <code>.type&#95;context</code>
 			<td>.box_content</td>
 		</tr>
 		<tr>
+			<td>.button</td>
+			<td>a, button</td>
+			<td>.button_admin</td>
+		</tr>
+		<tr>
 			<td>.field</td>
-			<td>button, input, select</td>
+			<td>input, select, textarea</td>
 			<td>.field_input</td>
 		</tr>
 		<tr>
