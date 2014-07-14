@@ -54,7 +54,7 @@ Syntax: <code>.context</code>
 		</tr>
 		<tr>
 			<td>.navigation</td>
-			<td>div, navi</td>
+			<td>div, nav</td>
 		</tr>
 		<tr>
 			<td>.section</td>
