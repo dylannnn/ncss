@@ -71,7 +71,7 @@ Syntax: <code>.context</code>
 	</tbody>
 </table>
 
-<strong>Important:</strong>
+<strong>Hint:</strong>
 
 Layout and structural classes should never contain a type prefix or abstract suffix.
 
@@ -91,69 +91,69 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 	</thead>
 	<tbody>
 		<tr>
-			<td>.box</td>
+			<td>box-</td>
 			<td>blockquote, div, span</td>
 			<td>.box-content</td>
 		</tr>
 		<tr>
-			<td>.button</td>
+			<td>button-</td>
 			<td>a, button</td>
 			<td>.button-content</td>
 		</tr>
 		<tr>
-			<td>.field</td>
+			<td>field-</td>
 			<td>input, select, textarea</td>
 			<td>.field-content</td>
 		</tr>
 		<tr>
-			<td>.form</td>
+			<td>form-</td>
 			<td>form</td>
 			<td>.form-content</td>
 		</tr>
 		<tr>
-			<td>.item</td>
+			<td>item-</td>
 			<td>dd, dt, li</td>
 			<td>.item-content</td>
 		</tr>
 		<tr>
-			<td>.label</td>
+			<td>label-</td>
 			<td>label, legend</td>
 			<td>.label-content</td>
 		</tr>
 		<tr>
-			<td>.link</td>
+			<td>link-</td>
 			<td>a</td>
 			<td>.link-content</td>
 		</tr>
 		<tr>
-			<td>.list</td>
+			<td>list-</td>
 			<td>dl, ol, ul</td>
 			<td>.list-content</td>
 		</tr>
 		<tr>
-			<td>.set</td>
+			<td>set-</td>
 			<td>div, fieldset</td>
 			<td>.set-content</td>
 		</tr>
 		<tr>
-			<td>.table</td>
+			<td>table-</td>
 			<td>table</td>
 			<td>.table-content</td>
 		</tr>
 		<tr>
-			<td>.text</td>
+			<td>text-</td>
 			<td>span, p</td>
 			<td>.text-content</td>
 		</tr>
 		<tr>
-			<td>.title</td>
+			<td>title-</td>
 			<td>h1, h2, h3, h4, h5, h6</td>
 			<td>.title-content</td>
 		</tr>
 	</tbody>
 </table>
 
-<strong>Important:</strong>
+<strong>Hint:</strong>
 
 Structural tags are rather unsuitable to contain a type prefix:
 
@@ -261,7 +261,7 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 	</tbody>
 </table>
 
-<strong>Important:</strong>
+<strong>Hint:</strong>
 
 Proper handling of type and context should prevent the need of adjoining classes.
 
@@ -287,19 +287,19 @@ Syntax: <code>.js-action</code> or <code>.js-context</code>
 	</thead>
 	<tbody>
 		<tr>
-			<td>.has</td>
+			<td>has-</td>
 			<td>*</td>
 			<td>.has-tooltip</td>
 		</tr>
 		<tr>
-			<td>.js</td>
+			<td>js-</td>
 			<td>*</td>
 			<td>.js-click</td>
 		</tr>
 	</tbody>
 </table>
 
-<strong>Important:</strong>
+<strong>Hint:</strong>
 
 Functional classes should never have declarations for styling.
 
