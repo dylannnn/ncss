@@ -79,7 +79,7 @@ Layout and structural classes should never contain a type prefix or abstract suf
 Type classes
 ------------
 
-Syntax: <code>.type</code> and <code>.type&#95;context</code>
+Syntax: <code>.type</code> and <code>.type-context</code>
 
 <table>
 	<thead>
@@ -170,15 +170,15 @@ Abstract classes
 
 Extend with additional description:
 
-Syntax: <code>.type&#95;description</code> and <code>.type&#95;context&#95;description</code>
+Syntax: <code>.type-description</code> and <code>.type-context-description</code>
 
 Extend with current state:
 
-Syntax: <code>.type&#95;state</code> and <code>.type&#95;context&#95;state</code>
+Syntax: <code>.type-state</code> and <code>.type-context-state</code>
 
 Extend with position information:
 
-Syntax: <code>.type&#95;position</code> and <code>.type&#95;context&#95;position</code>
+Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 
 <table>
 	<thead>
@@ -271,11 +271,11 @@ Functional classes
 
 Pure functional classes, marked with the <code>has</code> prefix.
 
-Syntax: <code>.has&#95;action</code> or <code>.has&#95;context</code>
+Syntax: <code>.has-action</code> or <code>.has-context</code>
 
 Javascript related classes marked with the <code>js</code> prefix.
 
-Syntax: <code>.js&#95;action</code> or <code>.js&#95;context</code>
+Syntax: <code>.js-action</code> or <code>.js-context</code>
 
 <table>
 	<thead>
@@ -307,7 +307,7 @@ Functional classes should never have declarations for styling.
 Example
 -------
 
-A class <code>.box&#95;content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.content</code> container.
+A class <code>.box-content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.content</code> container.
 
 
 HTML:
