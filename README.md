@@ -93,62 +93,62 @@ Syntax: <code>.type</code> and <code>.type&#95;context</code>
 		<tr>
 			<td>.box</td>
 			<td>blockquote, div, span</td>
-			<td>.box_content</td>
+			<td>.box-content</td>
 		</tr>
 		<tr>
 			<td>.button</td>
 			<td>a, button</td>
-			<td>.button_admin</td>
+			<td>.button-content</td>
 		</tr>
 		<tr>
 			<td>.field</td>
 			<td>input, select, textarea</td>
-			<td>.field_input</td>
+			<td>.field-content</td>
 		</tr>
 		<tr>
 			<td>.form</td>
 			<td>form</td>
-			<td>.form_contact</td>
+			<td>.form-content</td>
 		</tr>
 		<tr>
 			<td>.item</td>
 			<td>dd, dt, li</td>
-			<td>.item_active</td>
+			<td>.item-content</td>
 		</tr>
 		<tr>
 			<td>.label</td>
 			<td>label, legend</td>
-			<td>.label_search</td>
+			<td>.label-content</td>
 		</tr>
 		<tr>
 			<td>.link</td>
 			<td>a</td>
-			<td>.link_action</td>
+			<td>.link-content</td>
 		</tr>
 		<tr>
 			<td>.list</td>
 			<td>dl, ol, ul</td>
-			<td>.list_navigation</td>
+			<td>.list-content</td>
 		</tr>
 		<tr>
 			<td>.set</td>
 			<td>div, fieldset</td>
-			<td>.set_login</td>
+			<td>.set-content</td>
 		</tr>
 		<tr>
 			<td>.table</td>
 			<td>table</td>
-			<td>.table_result</td>
+			<td>.table-content</td>
 		</tr>
 		<tr>
 			<td>.text</td>
 			<td>span, p</td>
-			<td>.text_about</td>
+			<td>.text-content</td>
 		</tr>
 		<tr>
 			<td>.title</td>
 			<td>h1, h2, h3, h4, h5, h6</td>
-			<td>.title_content</td>
+			<td>.title-content</td>
 		</tr>
 	</tbody>
 </table>
@@ -193,70 +193,70 @@ Syntax: <code>.type&#95;position</code> and <code>.type&#95;context&#95;position
 			<td colspan="3">Additional description</td>
 		</tr>
 		<tr>
-			<td>_small</td>
+			<td>-small</td>
 			<td>*</td>
-			<td>.item_small</td>
+			<td>.item-small</td>
 		</tr>
 		<tr>
-			<td>_large</td>
+			<td>-large</td>
 			<td>*</td>
-			<td>.item_large</td>
+			<td>.item-large</td>
 		</tr>
 		<tr>
 			<td colspan="3">Current state</td>
 		</tr>
 		<tr>
-			<td>_active</td>
+			<td>-active</td>
 			<td>*</td>
-			<td>.item_active</td>
+			<td>.item-active</td>
 		</tr>
 		<tr>
-			<td>_idle</td>
+			<td>-idle</td>
 			<td>*</td>
-			<td>.item_idle</td>
+			<td>.item-idle</td>
 		</tr>
 		<tr>
-			<td>_hover</td>
+			<td>-hover</td>
 			<td>*</td>
-			<td>.item_hover</td>
+			<td>.item-hover</td>
 		</tr>
 		<tr>
-			<td>_touch</td>
+			<td>-touch</td>
 			<td>*</td>
-			<td>.item_touch</td>
+			<td>.item-touch</td>
 		</tr>
 		<tr>
 			<td colspan="3">Position information</td>
 		</tr>
 		<tr>
-			<td>_first</td>
+			<td>-first</td>
 			<td>*</td>
-			<td>.item_first</td>
+			<td>.item-first</td>
 		</tr>
 		<tr>
-			<td>_second</td>
+			<td>-second</td>
 			<td>*</td>
-			<td>.item_second</td>
+			<td>.item-second</td>
 		</tr>
 		<tr>
-			<td>_third</td>
+			<td>-third</td>
 			<td>*</td>
-			<td>.item_third</td>
+			<td>.item-third</td>
 		</tr>
 		<tr>
-			<td>_last</td>
+			<td>-last</td>
 			<td>*</td>
-			<td>.item_last</td>
+			<td>.item-last</td>
 		</tr>
 		<tr>
-			<td>_odd</td>
+			<td>-odd</td>
 			<td>*</td>
-			<td>.item_odd</td>
+			<td>.item-odd</td>
 		</tr>
 		<tr>
-			<td>_even</td>
+			<td>-even</td>
 			<td>*</td>
-			<td>.item_even</td>
+			<td>.item-even</td>
 		</tr>
 	</tbody>
 </table>
@@ -289,12 +289,12 @@ Syntax: <code>.js&#95;action</code> or <code>.js&#95;context</code>
 		<tr>
 			<td>.has</td>
 			<td>*</td>
-			<td>.has_tooltip</td>
+			<td>.has-tooltip</td>
 		</tr>
 		<tr>
 			<td>.js</td>
 			<td>*</td>
-			<td>.js_click</td>
+			<td>.js-click</td>
 		</tr>
 	</tbody>
 </table>
@@ -316,16 +316,16 @@ HTML:
 &lt;div class="wrapper"&gt;
 
 	&lt;div id="content" class="content"&gt;
-		&lt;h1 class="title_content"&gt;Headline&lt;/h1&gt;
-		&lt;div class="box_content"&gt;Content&lt;/div&gt;
+		&lt;h1 class="title-content"&gt;Headline&lt;/h1&gt;
+		&lt;div class="box-content"&gt;Content&lt;/div&gt;
 	&lt;/div&gt;
 
 	&lt;div id="sidebar" class="sidebar"&gt;
-		&lt;h1 class="title_sidebar"&gt;Headline&lt;/h1&gt;
-		&lt;div class="box_sidebar"&gt;
-			&lt;ul class="list_sidebar"&gt;
+		&lt;h1 class="title-sidebar"&gt;Headline&lt;/h1&gt;
+		&lt;div class="box-sidebar"&gt;
+			&lt;ul class="list-sidebar"&gt;
 				&lt;li&gt;Item&lt;/li&gt;
-				&lt;li class="js_active item_active"&gt;Active item&lt;/li&gt;
+				&lt;li class="js-active item-active"&gt;Active item&lt;/li&gt;
 				&lt;li&gt;Item&lt;/li&gt;
 			&lt;/ul&gt;
 		&lt;/div&gt;
@@ -339,24 +339,24 @@ CSS:
 <pre>
 /* boxes */
 
-.box_content
+.box-content
 {
 	padding: 1em;
 }
 
-.box_sidebar
+.box-sidebar
 {
 	padding: 0.5em;
 }
 
 /* titles */
 
-.title_content
+.title-content
 {
 	color: #555;
 }
 
-.title_sidebar
+.title-sidebar
 {
 	color: #777;
 }
