@@ -19,10 +19,10 @@ Getting started
 
 Named Cascading Style Sheets are divided into:
 
-- Structural classes
-- Type classes
-- Abstract classes
-- Functional classes
+- [Structural classes](#structural-classes)
+- [Type classes](#type-classes)
+- [Abstract classes](#abstract-classes)
+- [Functional classes](#functional-classes)
 
 There is no specification the use hyphen, underscore or camelcase for class names!
 
