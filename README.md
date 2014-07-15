@@ -10,7 +10,7 @@ Why
 Massive CSS on large scaled websites used to cause following issues:
 
 - Multiple editors without a uniform concept
-- Missing context to the website's layout and structure
+- Missing context to the website's layout and HTML structure
 - Lack of inline documentation
 
 
@@ -346,7 +346,7 @@ CSS:
 
 .box-sidebar
 {
-	padding: 0.5em;
+	padding: 1em;
 }
 
 /* titles */
