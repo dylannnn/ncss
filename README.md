@@ -21,7 +21,7 @@ Named Cascading Style Sheets are divided into:
 
 - [Structural classes](#structural-classes)
 - [Type classes](#type-classes)
-- [Abstract classes](#abstract-classes)
+- [Modifier classes](#modifier-classes)
 - [Functional classes](#functional-classes)
 
 There is no specification the use hyphen, underscore or camelcase for class names!
@@ -73,7 +73,7 @@ Syntax: <code>.context</code>
 
 <strong>Hint:</strong>
 
-Layout and structural classes should never contain a type prefix or abstract suffix.
+Layout and structural classes should never contain a type prefix or modifier suffix.
 
 
 Type classes
@@ -165,7 +165,7 @@ Structural tags are rather unsuitable to contain a type prefix:
 - section
 
 
-Abstract classes
+Modifier classes
 ----------------
 
 Extend with additional description:
