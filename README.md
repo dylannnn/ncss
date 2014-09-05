@@ -1,7 +1,7 @@
 NCSS
 ====
 
-> NCSS is a paper about CSS naming conventions and best practices for modular and atomic design powered frontend frameworks.
+> NCSS is a paper about CSS naming conventions and best practices for object oriented and atomic design CSS.
 
 
 Why
