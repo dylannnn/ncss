@@ -272,9 +272,7 @@ Functional classes
 
 Pure functional classes, marked with the <code>has</code> or <code>fn</code> prefix.
 
-Syntax: <code>.has-action</code> or <code>.has-context</code>
-
-Syntax: <code>.fn-action</code> or <code>.fn-context</code>
+Syntax: <code>.has-action</code> or <code>.fn-action</code>
 
 Javascript related classes marked with the <code>js</code> prefix.
 
@@ -297,7 +295,7 @@ Syntax: <code>.js-action</code> or <code>.js-context</code>
 		<tr>
 			<td>fn-</td>
 			<td>*</td>
-			<td>.fn-trigger</td>
+			<td>.fn-more</td>
 		</tr>
 		<tr>
 			<td>js-</td>
