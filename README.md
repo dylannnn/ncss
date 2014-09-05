@@ -50,7 +50,7 @@ Syntax: <code>.namespace</code>
 
 <strong>Hint:</strong>
 
-Consider to use short namespaces if you provide your CSS to a third party.
+Consider to pick a namespace if you provide your CSS to a third party application.
 
 
 Structural classes
