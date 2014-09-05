@@ -385,7 +385,8 @@ CSS:
 
 /* titles */
 
-.foo-title {
+.foo-title
+{
 	font-size: 1em;
 }
 
@@ -404,7 +405,7 @@ CSS:
 Conclusion
 ----------
 
-The goal of NCSS is to provide **additional information** just by reading unknown CSS declaration.
+The goal of NCSS is to provide **additional information** by reading unknown CSS declaration.
 
 - What elements, tags and sections are affected
 - What is the relation of one CSS class to another
