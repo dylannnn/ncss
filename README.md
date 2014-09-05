@@ -7,9 +7,9 @@ NCSS
 Why
 ---
 
-Massive CSS on large scaled websites used to cause following issues:
+Massive CSS on **large scaled** websites used to cause following issues:
 
-- Multiple editors without a uniform concept
+- Team members without a uniform concept
 - Missing context to the website's layout and HTML structure
 - Lack of inline documentation
 
@@ -333,7 +333,7 @@ Functional classes should never have declarations for styling.
 Example
 -------
 
-A class <code>.foo-box-content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.foo-content</code> container. I picked a namespace <code>foo</code> from a conceived framework called foobar.
+A class <code>.foo-box-content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.foo-content</code> container. I picked the namespace <code>foo</code> from an conceived framework called foobar.
 
 
 HTML:
