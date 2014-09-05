@@ -19,38 +19,13 @@ Getting started
 
 Named Cascading Style Sheets are divided into:
 
-- [Namespace classes](#namespace-classes)
 - [Structural classes](#structural-classes)
 - [Type classes](#type-classes)
 - [Modifier classes](#modifier-classes)
 - [Functional classes](#functional-classes)
+- [Namespace classes](#namespace-classes)
 
 There is no specification the use **hyphen**, **underscore** or **camelcase** for class names!
-
-
-Namespace classes
------------------
-
-Syntax: <code>.namespace</code>
-
-<table>
-	<thead>
-		<tr>
-			<th>Prefix</th>
-			<th>Tags</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>foo-</td>
-			<td>*</td>
-		</tr>
-	</tbody>
-</table>
-
-<strong>Hint:</strong>
-
-Consider to pick a namespace if you provide your CSS to a third party application.
 
 
 Structural classes
@@ -328,6 +303,31 @@ Syntax: <code>.js-action</code> or <code>.js-context</code>
 <strong>Hint:</strong>
 
 Functional classes should never have declarations for styling.
+
+
+Namespace classes
+-----------------
+
+Syntax: <code>.namespace</code>
+
+<table>
+	<thead>
+		<tr>
+			<th>Prefix</th>
+			<th>Tags</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>foo-</td>
+			<td>*</td>
+		</tr>
+	</tbody>
+</table>
+
+<strong>Hint:</strong>
+
+Consider to pick a namespace if you provide your CSS to a third party application.
 
 
 Example
