@@ -333,7 +333,7 @@ Functional classes should never have declarations for styling.
 Example
 -------
 
-A class <code>.foo-box-content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.foo-content</code> container. I picked a CSS fake namespace <code>foo-</code> from the foobar framework.
+A class <code>.foo-box-content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.foo-content</code> container. I picked a fake namespace <code>foo-</code> from a foobar framework.
 
 
 HTML:
@@ -367,7 +367,7 @@ CSS:
 
 .foo-box
 {
-	box-sizing: content-box;
+	box-sizing: border-box;
 	padding: 1em;
 }
 
