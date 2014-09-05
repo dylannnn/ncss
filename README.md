@@ -293,6 +293,11 @@ Syntax: <code>.js-action</code> or <code>.js-context</code>
 			<td>.has-tooltip</td>
 		</tr>
 		<tr>
+			<td>fn-</td>
+			<td>*</td>
+			<td>.fn-trigger</td>
+		</tr>
+		<tr>
 			<td>js-</td>
 			<td>*</td>
 			<td>.js-click</td>
