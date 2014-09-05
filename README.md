@@ -333,7 +333,7 @@ Functional classes should never have declarations for styling.
 Example
 -------
 
-A class <code>.box-content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.content</code> container. I picked a CSS namespace from the **foobar** framework.
+A class <code>.foo-box-content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.foo-content</code> container. I picked a CSS fake namespace <code>foo-</code> from the foobar framework.
 
 
 HTML:
@@ -342,13 +342,13 @@ HTML:
 &lt;div class="foo-wrapper"&gt;
 
 	&lt;div id="content" class="foo-content"&gt;
-		&lt;h1 class="foo-title-content"&gt;Headline&lt;/h1&gt;
+		&lt;h1 class="foo-title foo-title-content"&gt;Headline&lt;/h1&gt;
 		&lt;div class="foo-box foo-box-content"&gt;Content&lt;/div&gt;
 	&lt;/div&gt;
 
 	&lt;div id="sidebar" class="foo-sidebar"&gt;
-		&lt;h1 class="foo-title-sidebar"&gt;Headline&lt;/h1&gt;
-		&lt;div class="foo-box-sidebar"&gt;
+		&lt;h1 class="foo-title foo-title-sidebar"&gt;Headline&lt;/h1&gt;
+		&lt;div class="foo-box foo-box-sidebar"&gt;
 			&lt;ul class="foo-list-sidebar"&gt;
 				&lt;li&gt;Item&lt;/li&gt;
 				&lt;li class="foo-js-active foo-item-active"&gt;Active item&lt;/li&gt;
@@ -384,6 +384,10 @@ CSS:
 }
 
 /* titles */
+
+.foo-title {
+	font-size: 1em;
+}
 
 .foo-title-content
 {
