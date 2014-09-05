@@ -19,12 +19,38 @@ Getting started
 
 Named Cascading Style Sheets are divided into:
 
+- [Namespace classes](#namespace-classes)
 - [Structural classes](#structural-classes)
 - [Type classes](#type-classes)
 - [Modifier classes](#modifier-classes)
 - [Functional classes](#functional-classes)
 
-There is no specification the use hyphen, underscore or camelcase for class names!
+There is no specification the use **hyphen**, **underscore** or **camelcase** for class names!
+
+
+Namespace classes
+-----------------
+
+Syntax: <code>.namespace</code>
+
+<table>
+	<thead>
+		<tr>
+			<th>Prefix</th>
+			<th>Tags</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>foo-</td>
+			<td>*</td>
+		</tr>
+	</tbody>
+</table>
+
+<strong>Hint:</strong>
+
+Consider to use short namespaces if you provide your CSS to a third party.
 
 
 Structural classes
@@ -307,25 +333,25 @@ Functional classes should never have declarations for styling.
 Example
 -------
 
-A class <code>.box-content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.content</code> container.
+A class <code>.box-content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.content</code> container. I picked a CSS namespace from the **foobar** framework.
 
 
 HTML:
 
 <pre>
-&lt;div class="wrapper"&gt;
+&lt;div class="foo-wrapper"&gt;
 
-	&lt;div id="content" class="content"&gt;
-		&lt;h1 class="title-content"&gt;Headline&lt;/h1&gt;
-		&lt;div class="box-content"&gt;Content&lt;/div&gt;
+	&lt;div id="content" class="foo-content"&gt;
+		&lt;h1 class="foo-title-content"&gt;Headline&lt;/h1&gt;
+		&lt;div class="foo-box foo-box-content"&gt;Content&lt;/div&gt;
 	&lt;/div&gt;
 
-	&lt;div id="sidebar" class="sidebar"&gt;
-		&lt;h1 class="title-sidebar"&gt;Headline&lt;/h1&gt;
-		&lt;div class="box-sidebar"&gt;
-			&lt;ul class="list-sidebar"&gt;
+	&lt;div id="sidebar" class="foo-sidebar"&gt;
+		&lt;h1 class="foo-title-sidebar"&gt;Headline&lt;/h1&gt;
+		&lt;div class="foo-box-sidebar"&gt;
+			&lt;ul class="foo-list-sidebar"&gt;
 				&lt;li&gt;Item&lt;/li&gt;
-				&lt;li class="js-active item-active"&gt;Active item&lt;/li&gt;
+				&lt;li class="foo-js-active foo-item-active"&gt;Active item&lt;/li&gt;
 				&lt;li&gt;Item&lt;/li&gt;
 			&lt;/ul&gt;
 		&lt;/div&gt;
@@ -339,24 +365,32 @@ CSS:
 <pre>
 /* boxes */
 
-.box-content
+.foo-box
 {
+	box-sizing: content-box;
 	padding: 1em;
 }
 
-.box-sidebar
+.foo-box-content
 {
-	padding: 1em;
+	float: right;
+	width: 80%;
+}
+
+.foo-box-sidebar
+{
+	float: left;
+	width: 20%;
 }
 
 /* titles */
 
-.title-content
+.foo-title-content
 {
 	color: #555;
 }
 
-.title-sidebar
+.foo-title-sidebar
 {
 	color: #777;
 }
@@ -366,7 +400,7 @@ CSS:
 Conclusion
 ----------
 
-The goal of NCSS is to provide additional information just by reading unknown CSS.
+The goal of NCSS is to provide **additional information** just by reading unknown CSS declaration.
 
 - What elements, tags and sections are affected
 - What is the relation of one CSS class to another
