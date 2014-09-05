@@ -270,9 +270,11 @@ Proper handling of type and context should prevent the need of adjoining classes
 Functional classes
 ------------------
 
-Pure functional classes, marked with the <code>has</code> prefix.
+Pure functional classes, marked with the <code>has</code> or <code>fn</code> prefix.
 
 Syntax: <code>.has-action</code> or <code>.has-context</code>
+
+Syntax: <code>.fn-action</code> or <code>.fn-context</code>
 
 Javascript related classes marked with the <code>js</code> prefix.
 
