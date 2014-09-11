@@ -9,9 +9,9 @@ Why
 
 Massive CSS on **larger projects** used to cause issues:
 
-- Team members without uniform naming conventions
+- Team members without uniform conventions
 - Missing context to the project's layout and structure
-- Big ball of mud (everything in a single file)
+- Big ball of mud (lack of modularization)
 - Lack of inline documentation
 
 
@@ -79,7 +79,7 @@ Syntax: <code>.context</code>
 Type classes
 ------------
 
-Type classes are the foundation to write **re-usable**, **modular** and **semantic** classes. Keep in mind that structural tags are rather unsuitable to contain a **type** prefix.
+Type classes are the foundation to write **re-usable**, **modular** and **semantic** CSS. Keep in mind that structural tags are rather unsuitable to contain a **type** prefix.
 
 Syntax: <code>.type</code> and <code>.type-context</code>
 
@@ -252,7 +252,7 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 Functional classes
 ------------------
 
-Functional classes using **pure CSS** are marked with the <code>has</code> and <code>fn</code> prefix. Javascript enhanced classes on the other hand are marked with the <code>js</code> prefix. Both should never have styles for painting.
+Functional classes using **pure CSS** are marked with the <code>has</code> and <code>fn</code> prefix. **Javascript enhanced** classes on the other hand are marked with the <code>js</code> prefix. Both should never have styles for painting.
 
 Syntax: <code>.has-action</code> or <code>.fn-action</code>
 
