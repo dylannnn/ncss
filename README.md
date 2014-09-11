@@ -46,27 +46,27 @@ Syntax: <code>.context</code>
 	<tbody>
 		<tr>
 			<td>.content</td>
-			<td>article, div</td>
+			<td>article</td>
 		</tr>
 		<tr>
 			<td>.footer</td>
-			<td>div, footer</td>
+			<td>footer</td>
 		</tr>
 		<tr>
 			<td>.header</td>
-			<td>div, header</td>
+			<td>header</td>
 		</tr>
 		<tr>
 			<td>.navigation</td>
-			<td>div, nav</td>
+			<td>nav</td>
 		</tr>
 		<tr>
 			<td>.section</td>
-			<td>div, section</td>
+			<td>section</td>
 		</tr>
 		<tr>
 			<td>.sidebar</td>
-			<td>div, aside</td>
+			<td>side</td>
 		</tr>
 		<tr>
 			<td>.wrapper</td>
@@ -79,7 +79,7 @@ Syntax: <code>.context</code>
 Type classes
 ------------
 
-Type classes are the basic to write *modular** and **semantic** classes. Keep in mind that structural tags are rather unsuitable to contain a **type** prefix.
+Type classes are the foundation to write *re-usable**, *modular** and **semantic** classes. Keep in mind that structural tags are rather unsuitable to contain a **type** prefix.
 
 Syntax: <code>.type</code> and <code>.type-context</code>
 
