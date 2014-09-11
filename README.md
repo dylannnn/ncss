@@ -7,17 +7,17 @@ NCSS
 Why
 ---
 
-Massive CSS on **large scaled** websites used to cause following issues:
+Massive CSS on **large scaled** projects used to cause issues:
 
 - Team members without a uniform concept
-- Missing context to the website's layout and HTML structure
+- Missing context to the project's layout and HTML structure
 - Lack of inline documentation
 
 
 Getting started
 ---------------
 
-Named Cascading Style Sheets are divided into:
+Named Cascading Style Sheets are divided to:
 
 - [Structural classes](#structural-classes)
 - [Type classes](#type-classes)
@@ -368,7 +368,14 @@ HTML:
 CSS:
 
 <pre>
-/* boxes */
+/**
+ * @tableofcontents
+ *
+ * 1. boxes
+ * 2. titles
+ */
+
+/* @section 1. boxes */
 
 .foo-box
 {
@@ -388,7 +395,7 @@ CSS:
 	width: 20%;
 }
 
-/* titles */
+/* @section 2. titles */
 
 .foo-title
 {
@@ -410,11 +417,11 @@ CSS:
 Conclusion
 ----------
 
-The goal of NCSS is to provide **additional information** by reading unknown CSS declaration.
+The goal of NCSS is to provide **semantic information** by reading unknown CSS declaration.
 
-- What elements, tags and sections are affected
-- What is the relation of one CSS class to another
-- Where to add related CSS declarations
+- What kind of **elements**, **tags** and **sections** are affected
+- What is the relation and inheritance of one **class** to another
+- Where is the most accurate place to add new **declarations**
 
 
 Thanks
