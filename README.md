@@ -7,7 +7,7 @@ NCSS
 Why
 ---
 
-Massive CSS on **large scaled** projects used to cause issues:
+Massive CSS on **larger projects** used to cause issues:
 
 - Team members without uniform naming conventions
 - Missing context to the project's layout and structure
@@ -18,7 +18,7 @@ Massive CSS on **large scaled** projects used to cause issues:
 Getting started
 ---------------
 
-There is no specification the use **hyphen**, **underscore** or **camelcase** for your classnames - this is upon your personal preference, but we recommended to use the language's native hyphen style.
+There is no specification the use **hyphen**, **underscore** or **camelcase** for your classnames - it is upon your personal preference, but we recommended to use the language's native hyphen style.
 
 Named Cascading Style Sheets are divided to:
 
@@ -32,7 +32,7 @@ Named Cascading Style Sheets are divided to:
 Structural classes
 ------------------
 
-Layout and structural classes provide a semantic context for underlaying elements. Names are **stand-alone** and should never contain a prefix or suffix.
+Layout and structural classes provide a semantic context for underlaying elements. Their classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention.
 
 Syntax: <code>.context</code>
 
@@ -79,7 +79,7 @@ Syntax: <code>.context</code>
 Type classes
 ------------
 
-Structural tags like <code>article</code>, <code>aside</code>, <code>footer</code>, <code>header</code>, <code>nav</code>, <code>section</code> are rather unsuitable to contain a type prefix.
+Structural tags like <code>article</code>, <code>aside</code>, <code>footer</code>, <code>header</code>, <code>nav</code>, <code>section</code> are rather unsuitable to contain a **type** prefix.
 
 Syntax: <code>.type</code> and <code>.type-context</code>
 
@@ -258,7 +258,7 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 Functional classes
 ------------------
 
-Pure functional classes, marked with the <code>has</code> and <code>fn</code> prefix - that kind of classes should never have declarations for painting.
+Pure functional classes, marked with the <code>has</code> and <code>fn</code> prefix - that kind of classes should never have styles for painting.
 
 Syntax: <code>.has-action</code> or <code>.fn-action</code>
 
@@ -297,7 +297,7 @@ Syntax: <code>.js-action</code> or <code>.js-context</code>
 Namespace classes
 -----------------
 
-Consider to pick a namespace if you provide your CSS to a third party application.
+Consider to pick a unique namespace if you provide a framework to third party applications or generally want to prevent naming conflicts in your project.
 
 Syntax: <code>.namespace</code>
 
