@@ -177,7 +177,7 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 	</thead>
 	<tbody>
 		<tr>
-			<td colspan="3">Current state</td>
+			<td colspan="3">State</td>
 		</tr>
 		<tr>
 			<td>-active</td>
@@ -200,7 +200,7 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 			<td>.item-touch</td>
 		</tr>
 		<tr>
-			<td colspan="3">Additional description</td>
+			<td colspan="3">Description</td>
 		</tr>
 		<tr>
 			<td>-small</td>
@@ -213,7 +213,7 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 			<td>.item-large</td>
 		</tr>
 		<tr>
-			<td colspan="3">Position information</td>
+			<td colspan="3">Position</td>
 		</tr>
 		<tr>
 			<td>-first</td>
@@ -252,7 +252,7 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 Functional classes
 ------------------
 
-Functional classes using **pure CSS** are marked with the <code>has</code> and <code>fn</code> prefix. **Javascript enhanced** classes on the other hand are marked with the <code>js</code> prefix. Both should never have styles for painting.
+Functional classes using **pure CSS** are marked with the <code>has</code> and <code>fn</code> prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand are marked with the <code>js</code> prefix. Both should never have styles for painting.
 
 Syntax: <code>.has-action</code> or <code>.fn-action</code>
 
