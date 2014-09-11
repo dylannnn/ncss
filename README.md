@@ -9,7 +9,7 @@ Why
 
 Massive CSS on **large scaled** projects used to cause issues:
 
-- Team members without a uniform concept
+- Team members without a uniform naming convention
 - Missing context to the project's layout and HTML structure
 - Lack of inline documentation
 
@@ -419,9 +419,9 @@ Conclusion
 
 The goal of NCSS is to provide **semantic information** by reading unknown CSS declaration.
 
-- What kind of **elements**, **tags** and **sections** are affected
-- What is the relation and inheritance of one **class** to another
-- Where is the most accurate place to add new **declarations**
+- What kind of elements, tags and sections are affected
+- What is the relation and inheritance of classes
+- Where is the most accurate place to add new declarations
 
 
 Thanks
