@@ -9,9 +9,9 @@ Why
 
 Massive CSS on **larger projects** used to cause issues:
 
-- Team members without uniform conventions
+- Teamwork without uniform conventions
 - Missing context to the project's layout and structure
-- Big ball of mud (lack of modularization)
+- Big ball of mud instead of modularization
 - Lack of inline documentation
 
 
@@ -20,7 +20,7 @@ Getting started
 
 There is no specification the use **hyphen**, **underscore** or **camelcase** for your classnames - it is upon your personal preference, but we recommended to use the language's native hyphen style.
 
-Named Cascading Style Sheets are divided to:
+Named Cascading Style Sheets are divided into:
 
 - [Structural classes](#structural-classes)
 - [Type classes](#type-classes)
@@ -32,7 +32,7 @@ Named Cascading Style Sheets are divided to:
 Structural classes
 ------------------
 
-Layout and structural classes provide a semantic context for underlaying elements. Their classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention.
+Layout and structural classes provide a semantic context for underlaying elements. Classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention.
 
 Syntax: <code>.context</code>
 
@@ -79,7 +79,7 @@ Syntax: <code>.context</code>
 Type classes
 ------------
 
-Type classes are the foundation to write **re-usable**, **modular** and **semantic** CSS. Keep in mind that structural tags are rather unsuitable to contain a **type** prefix.
+Type classes are the foundation to write **re-usable**, **modular** and **semantic** NCSS and should tell the reader what kind of elements, tags and sections are affected. Keep in mind that structural tags are rather unsuitable to contain a **type** prefix.
 
 Syntax: <code>.type</code> and <code>.type-context</code>
 
@@ -155,11 +155,11 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 	</tbody>
 </table>
 
-
+y
 Modifier classes
 ----------------
 
-There are no limitation to extend **type classes** with your individual **state**, **description** and **position** modifier. Proper handling of type and context should prevent the need of adjoining classes.
+There are no limitation to extend your **type classes** with individual **state**, **description** and **position** modifier. Proper handling of **context** and **type** should prevent the need of adjoining classes.
 
 Syntax: <code>.type-state</code> and <code>.type-context-state</code>
 
@@ -252,7 +252,7 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 Functional classes
 ------------------
 
-Functional classes using **pure CSS** are marked with the <code>has</code> and <code>fn</code> prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand are marked with the <code>js</code> prefix. Both should never have styles for painting.
+Functional classes using **pure CSS** are marked with the <code>has</code> and <code>fn</code> prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand can be identified by the <code>js</code> prefix. Both should never ever have styles for painting.
 
 Syntax: <code>.has-action</code> or <code>.fn-action</code>
 
@@ -289,7 +289,7 @@ Syntax: <code>.js-action</code> or <code>.js-context</code>
 Namespace classes
 -----------------
 
-Consider to pick a unique namespace if you provide a framework to third party applications or generally want to prevent naming conflicts in your project.
+Consider to pick a unique namespace once you provide a framework to third party applications or generally want to prevent naming conflicts inside your project.
 
 Syntax: <code>.namespace</code>
 
