@@ -18,7 +18,7 @@ Massive CSS on **large scaled** projects used to cause issues:
 Getting started
 ---------------
 
-There is no specification the use **hyphen**, **underscore** or **camelcase** for your classes - this should be upon your personal preference, we recommended to use the language's native hyphen style.
+There is no specification the use **hyphen**, **underscore** or **camelcase** for your classnames - this is upon your personal preference, but we recommended to use the language's native hyphen style.
 
 Named Cascading Style Sheets are divided to:
 
@@ -32,7 +32,7 @@ Named Cascading Style Sheets are divided to:
 Structural classes
 ------------------
 
-Layout and structural classes are **stand-alone** and should never contain a prefix or suffix.
+Layout and structural classes provide a semantic context for underlaying elements. Names are **stand-alone** and should never contain a prefix or suffix.
 
 Syntax: <code>.context</code>
 
