@@ -159,17 +159,11 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 Modifier classes
 ----------------
 
-Proper handling of type and context should prevent the need of adjoining classes.
-
-Extend with additional description:
-
-Syntax: <code>.type-description</code> and <code>.type-context-description</code>
-
-Extend with current state:
+There are no limitation to extend **type classes** with your individual **state**, **description** and **position** modifier. Proper handling of type and context should prevent the need of adjoining classes.
 
 Syntax: <code>.type-state</code> and <code>.type-context-state</code>
 
-Extend with position information:
+Syntax: <code>.type-description</code> and <code>.type-context-description</code>
 
 Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 
@@ -182,19 +176,6 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td colspan="3">Additional description</td>
-		</tr>
-		<tr>
-			<td>-small</td>
-			<td>*</td>
-			<td>.item-small</td>
-		</tr>
-		<tr>
-			<td>-large</td>
-			<td>*</td>
-			<td>.item-large</td>
-		</tr>
 		<tr>
 			<td colspan="3">Current state</td>
 		</tr>
@@ -217,6 +198,19 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 			<td>-touch</td>
 			<td>*</td>
 			<td>.item-touch</td>
+		</tr>
+		<tr>
+			<td colspan="3">Additional description</td>
+		</tr>
+		<tr>
+			<td>-small</td>
+			<td>*</td>
+			<td>.item-small</td>
+		</tr>
+		<tr>
+			<td>-large</td>
+			<td>*</td>
+			<td>.item-large</td>
 		</tr>
 		<tr>
 			<td colspan="3">Position information</td>
@@ -258,11 +252,9 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 Functional classes
 ------------------
 
-Pure functional classes, marked with the <code>has</code> and <code>fn</code> prefix - that kind of classes should never have styles for painting.
+Functional classes using **pure CSS** are marked with the <code>has</code> and <code>fn</code> prefix. Javascript enhanced classes on the other hand are marked with the <code>js</code> prefix. Both should never have styles for painting.
 
 Syntax: <code>.has-action</code> or <code>.fn-action</code>
-
-Javascript related classes marked with the <code>js</code> prefix.
 
 Syntax: <code>.js-action</code> or <code>.js-context</code>
 
@@ -402,5 +394,5 @@ Conclusion
 The goal of NCSS is to provide **semantic information** by reading other's people CSS.
 
 - What kind of elements, tags and sections are affected
-- What is the relation and inheritance of classes
+- What is the relation and inheritance of one class to another
 - Where is the most accurate place to add new declarations
