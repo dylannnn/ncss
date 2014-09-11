@@ -69,6 +69,10 @@ Syntax: <code>.context</code>
 			<td>side</td>
 		</tr>
 		<tr>
+			<td>.main</td>
+			<td>div</td>
+		</tr>
+		<tr>
 			<td>.wrapper</td>
 			<td>div</td>
 		</tr>
@@ -94,7 +98,7 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 	<tbody>
 		<tr>
 			<td>box-</td>
-			<td>blockquote, div, span</td>
+			<td>blockquote, div</td>
 			<td>.box-content</td>
 		</tr>
 		<tr>
@@ -318,7 +322,7 @@ A class <code>.foo-box-content</code> provides the information of a styled <code
 HTML:
 
 <pre>
-&lt;div class="foo-wrapper"&gt;
+&lt;div class="foo-main foo-wrapper"&gt;
 
 	&lt;div id="content" class="foo-content"&gt;
 		&lt;h1 class="foo-title foo-title-content"&gt;Headline&lt;/h1&gt;
