@@ -79,7 +79,7 @@ Syntax: <code>.context</code>
 Type classes
 ------------
 
-Structural tags like <code>article</code>, <code>aside</code>, <code>footer</code>, <code>header</code>, <code>nav</code>, <code>section</code> are rather unsuitable to contain a **type** prefix.
+Type classes are the basic to write *modular** and **semantic** classes. Keep in mind that structural tags are rather unsuitable to contain a **type** prefix.
 
 Syntax: <code>.type</code> and <code>.type-context</code>
 
