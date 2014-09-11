@@ -79,7 +79,7 @@ Syntax: <code>.context</code>
 Type classes
 ------------
 
-Type classes are the foundation to write *re-usable**, *modular** and **semantic** classes. Keep in mind that structural tags are rather unsuitable to contain a **type** prefix.
+Type classes are the foundation to write **re-usable**, **modular** and **semantic** classes. Keep in mind that structural tags are rather unsuitable to contain a **type** prefix.
 
 Syntax: <code>.type</code> and <code>.type-context</code>
 
