@@ -79,7 +79,7 @@ Syntax: <code>.context</code>
 Type classes
 ------------
 
-Type classes are the foundation to write **re-usable**, **modular** and **semantic** NCSS and should tell the reader what kind of elements, tags and sections are affected. Keep in mind that structural tags are rather unsuitable to contain a **type** prefix.
+Type classes are the foundation to write **re-usable**, **modular** and **semantic** CSS - tell the reader what kind of elements, tags and sections are affected. Keep in mind that structural tags are rather unsuitable to contain a **type** prefix.
 
 Syntax: <code>.type</code> and <code>.type-context</code>
 
@@ -155,7 +155,7 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 	</tbody>
 </table>
 
-y
+
 Modifier classes
 ----------------
 
@@ -252,7 +252,7 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 Functional classes
 ------------------
 
-Functional classes using **pure CSS** are marked with the <code>has</code> and <code>fn</code> prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand can be identified by the <code>js</code> prefix. Both should never ever have styles for painting.
+Functional classes using **pure CSS** are marked with the <code>has</code> and <code>fn</code> prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand can be identified by the <code>js</code> prefix. Both should never have styles for painting, use an additional **type** class for this purpose.
 
 Syntax: <code>.has-action</code> or <code>.fn-action</code>
 
