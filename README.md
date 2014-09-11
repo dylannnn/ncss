@@ -11,14 +11,16 @@ Massive CSS on **large scaled** projects used to cause issues:
 
 - Team members without uniform naming conventions
 - Missing context to the project's layout and structure
-- Big ball of mud
+- Big ball of mud (everything in a single file)
 - Lack of inline documentation
 
 
 Getting started
 ---------------
 
-There is no specification the use **hyphen**, **underscore** or **camelcase** for your classes - this is upon your personal preference. We recommended to stay in the language's native style and go with **hyphen**. Named Cascading Style Sheets are divided to:
+There is no specification the use **hyphen**, **underscore** or **camelcase** for your classes - this should be upon your personal preference, we recommended to use the language's native hyphen style.
+
+Named Cascading Style Sheets are divided to:
 
 - [Structural classes](#structural-classes)
 - [Type classes](#type-classes)
@@ -29,6 +31,8 @@ There is no specification the use **hyphen**, **underscore** or **camelcase** fo
 
 Structural classes
 ------------------
+
+Layout and structural classes are **stand-alone** and should never contain a prefix or suffix.
 
 Syntax: <code>.context</code>
 
@@ -71,13 +75,11 @@ Syntax: <code>.context</code>
 	</tbody>
 </table>
 
-<strong>Hint:</strong>
-
-Layout and structural classes should never contain a type prefix or modifier suffix.
-
 
 Type classes
 ------------
+
+Structural tags like <code>article</code>, <code>aside</code>, <code>footer</code>, <code>header</code>, <code>nav</code>, <code>section</code> are rather unsuitable to contain a type prefix.
 
 Syntax: <code>.type</code> and <code>.type-context</code>
 
@@ -153,20 +155,11 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 	</tbody>
 </table>
 
-<strong>Hint:</strong>
-
-Structural tags are rather unsuitable to contain a type prefix:
-
-- article
-- aside
-- footer
-- header
-- nav
-- section
-
 
 Modifier classes
 ----------------
+
+Proper handling of type and context should prevent the need of adjoining classes.
 
 Extend with additional description:
 
@@ -261,15 +254,11 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 	</tbody>
 </table>
 
-<strong>Hint:</strong>
-
-Proper handling of type and context should prevent the need of adjoining classes.
-
 
 Functional classes
 ------------------
 
-Pure functional classes, marked with the <code>has</code> and <code>fn</code> prefix.
+Pure functional classes, marked with the <code>has</code> and <code>fn</code> prefix - that kind of classes should never have declarations for painting.
 
 Syntax: <code>.has-action</code> or <code>.fn-action</code>
 
@@ -304,13 +293,11 @@ Syntax: <code>.js-action</code> or <code>.js-context</code>
 	</tbody>
 </table>
 
-<strong>Hint:</strong>
-
-Functional classes should never have declarations for styling.
-
 
 Namespace classes
 -----------------
+
+Consider to pick a namespace if you provide your CSS to a third party application.
 
 Syntax: <code>.namespace</code>
 
@@ -328,10 +315,6 @@ Syntax: <code>.namespace</code>
 		</tr>
 	</tbody>
 </table>
-
-<strong>Hint:</strong>
-
-Consider to pick a namespace if you provide your CSS to a third party application.
 
 
 Example
