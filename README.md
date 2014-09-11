@@ -9,23 +9,22 @@ Why
 
 Massive CSS on **large scaled** projects used to cause issues:
 
-- Team members without a uniform naming convention
-- Missing context to the project's layout and HTML structure
+- Team members without uniform naming conventions
+- Missing context to the project's layout and structure
+- Big ball of mud
 - Lack of inline documentation
 
 
 Getting started
 ---------------
 
-Named Cascading Style Sheets are divided to:
+There is no specification the use **hyphen**, **underscore** or **camelcase** for your classes - this is upon your personal preference. We recommended to stay in the language's native style and go with **hyphen**. Named Cascading Style Sheets are divided to:
 
 - [Structural classes](#structural-classes)
 - [Type classes](#type-classes)
 - [Modifier classes](#modifier-classes)
 - [Functional classes](#functional-classes)
 - [Namespace classes](#namespace-classes)
-
-There is no specification the use **hyphen**, **underscore** or **camelcase** for class names!
 
 
 Structural classes
@@ -417,14 +416,8 @@ CSS:
 Conclusion
 ----------
 
-The goal of NCSS is to provide **semantic information** by reading unknown CSS declaration.
+The goal of NCSS is to provide **semantic information** by reading other's people CSS.
 
 - What kind of elements, tags and sections are affected
 - What is the relation and inheritance of classes
 - Where is the most accurate place to add new declarations
-
-
-Thanks
-------
-
-[Ronny Springer](https://github.com/ronny-springer) for contribution
