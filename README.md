@@ -322,29 +322,31 @@ A class <code>.foo-box-content</code> provides the information of a styled <code
 HTML:
 
 <pre>
-&lt;header id="header" class="foo-header"&gt; ... &lt;/header&gt;
+&lt;header id="header" class="foo-header"&gt; 
+	&lt;h1 class="foo-title-website"&gt;Website&lt;/h1&gt;
+&lt;/header&gt;
 
 &lt;div class="foo-main foo-wrapper"&gt;
 
 	&lt;article id="content" class="foo-content"&gt;
-		&lt;h1 class="foo-title foo-title-content"&gt;Headline&lt;/h1&gt;
+		&lt;h2 class="foo-title foo-title-content"&gt;Headline&lt;/h2&gt;
 		&lt;div class="foo-box foo-box-content"&gt;Content&lt;/div&gt;
 	&lt;/article&gt;
 
 	&lt;aside id="sidebar" class="foo-sidebar"&gt;
-		&lt;h1 class="foo-title foo-title-sidebar"&gt;Headline&lt;/h1&gt;
-		&lt;div class="foo-box foo-box-sidebar"&gt;
-			&lt;ul class="foo-list-sidebar"&gt;
-				&lt;li&gt;Item&lt;/li&gt;
-				&lt;li class="foo-js-active foo-item-active"&gt;Active item&lt;/li&gt;
-				&lt;li&gt;Item&lt;/li&gt;
-			&lt;/ul&gt;
-		&lt;/div&gt;
+		&lt;h3 class="foo-title foo-title-sidebar"&gt;Headline&lt;/h3&gt;
+		&lt;ul class="foo-list-sidebar"&gt;
+			&lt;li&gt;Item&lt;/li&gt;
+			&lt;li class="foo-js-active foo-item-active"&gt;Active item&lt;/li&gt;
+			&lt;li&gt;Item&lt;/li&gt;
+		&lt;/ul&gt;
 	&lt;/aside&gt;
 
 &lt;/div&gt;
 
-&lt;footer id="footer" class="footer"&gt; ... &lt;/footer&gt;
+&lt;footer id="footer" class="foo-footer"&gt;
+	&lt;div class="foo-box foo-box-footer"&gt;Powered by NCSS&lt;/div&gt;
+&lt;/footer&gt;
 </pre>
 
 CSS:
@@ -353,11 +355,26 @@ CSS:
 /**
  * @tableofcontents
  *
- * 1. boxes
- * 2. titles
+ * 1. layout
+ * 2. boxes
+ * 3. titles
  */
 
-/* @section 1. boxes */
+/* @section 1. layout */
+
+.foo-content
+{
+	float: right;
+	width: 80%;
+}
+
+.foo-sidebar
+{
+	float: left;
+	width: 20%;
+}
+
+/* @section 2. boxes */
 
 .foo-box
 {
@@ -365,19 +382,7 @@ CSS:
 	padding: 1em;
 }
 
-.foo-box-content
-{
-	float: right;
-	width: 80%;
-}
-
-.foo-box-sidebar
-{
-	float: left;
-	width: 20%;
-}
-
-/* @section 2. titles */
+/* @section 3. titles */
 
 .foo-title
 {
