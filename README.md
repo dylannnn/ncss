@@ -316,20 +316,22 @@ Syntax: <code>.namespace</code>
 Example
 -------
 
-A class <code>.foo-box-content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.foo-content</code> container. I picked the namespace <code>foo</code> from an conceived framework called foobar.
+A class <code>.foo-box-content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.foo-content</code> article tag. I picked the namespace <code>foo</code> from an conceived framework called foobar.
 
 
 HTML:
 
 <pre>
+&lt;header id="header" class="foo-header"&gt; ... &lt;/header&gt;
+
 &lt;div class="foo-main foo-wrapper"&gt;
 
-	&lt;div id="content" class="foo-content"&gt;
+	&lt;article id="content" class="foo-content"&gt;
 		&lt;h1 class="foo-title foo-title-content"&gt;Headline&lt;/h1&gt;
 		&lt;div class="foo-box foo-box-content"&gt;Content&lt;/div&gt;
-	&lt;/div&gt;
+	&lt;/article&gt;
 
-	&lt;div id="sidebar" class="foo-sidebar"&gt;
+	&lt;aside id="sidebar" class="foo-sidebar"&gt;
 		&lt;h1 class="foo-title foo-title-sidebar"&gt;Headline&lt;/h1&gt;
 		&lt;div class="foo-box foo-box-sidebar"&gt;
 			&lt;ul class="foo-list-sidebar"&gt;
@@ -338,9 +340,11 @@ HTML:
 				&lt;li&gt;Item&lt;/li&gt;
 			&lt;/ul&gt;
 		&lt;/div&gt;
-	&lt;/div&gt;
+	&lt;/aside&gt;
 
 &lt;/div&gt;
+
+&lt;footer id="footer" class="footer"&gt; ... &lt;/footer&gt;
 </pre>
 
 CSS:
