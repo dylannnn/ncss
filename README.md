@@ -1,7 +1,7 @@
 NCSS
 ====
 
-> NCSS is a paper about naming conventions and best practices for **object oriented** and **atomic design** CSS.
+> NCSS is a paper about naming conventions and best practices for **object oriented** and **atomic design** CSS. Get rid of reading your HTML again and again to find out what elements, tags and sections are affected.
 
 
 Why
