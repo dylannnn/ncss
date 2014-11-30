@@ -70,7 +70,7 @@ Syntax: <code>.context</code>
 		</tr>
 		<tr>
 			<td>.main</td>
-			<td>div</td>
+			<td>main</td>
 		</tr>
 		<tr>
 			<td>.wrapper</td>
