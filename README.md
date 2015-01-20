@@ -279,7 +279,12 @@ Syntax: <code>.js-action</code> or <code>.js-context</code>
 		<tr>
 			<td>fn-</td>
 			<td>*</td>
-			<td>.fn-more</td>
+			<td>.fn-toggle</td>
+		</tr>
+		<tr>
+			<td>is-</td>
+			<td>*</td>
+			<td>.is-active</td>
 		</tr>
 		<tr>
 			<td>js-</td>
