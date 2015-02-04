@@ -117,6 +117,11 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 			<td>.form-content</td>
 		</tr>
 		<tr>
+			<td>image-</td>
+			<td>img</td>
+			<td>.image-content</td>
+		</tr>
+		<tr>
 			<td>item-</td>
 			<td>dd, dt, li</td>
 			<td>.item-content</td>
