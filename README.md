@@ -118,7 +118,7 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 		</tr>
 		<tr>
 			<td>image-</td>
-			<td>img</td>
+			<td>img, object</td>
 			<td>.image-content</td>
 		</tr>
 		<tr>
