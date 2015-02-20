@@ -20,7 +20,7 @@ Getting started
 
 There is no specification the use **hyphen**, **underscore** or **camelcase** for your classnames - it is upon your personal preference, but we recommended to use the language's native hyphen style.
 
-Named Cascading Style Sheets are divided into:
+**N**amed **C**ascading **S**tyle **S**heets are divided into:
 
 - [Structural classes](#structural-classes)
 - [Type classes](#type-classes)
