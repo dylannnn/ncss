@@ -97,6 +97,11 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 	</thead>
 	<tbody>
 		<tr>
+			<td>audio-</td>
+			<td>audio</td>
+			<td>.audio-content</td>
+		</tr>
+		<tr>
 			<td>box-</td>
 			<td>blockquote, div</td>
 			<td>.box-content</td>
@@ -115,6 +120,11 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 			<td>form-</td>
 			<td>form</td>
 			<td>.form-content</td>
+		</tr>
+		<tr>
+			<td>frame-</td>
+			<td>iframe</td>
+			<td>.frame-content</td>
 		</tr>
 		<tr>
 			<td>image-</td>
@@ -160,6 +170,11 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 			<td>title-</td>
 			<td>h1, h2, h3, h4, h5, h6</td>
 			<td>.title-content</td>
+		</tr>
+		<tr>
+			<td>video-</td>
+			<td>iframe, video</td>
+			<td>.video-content</td>
 		</tr>
 	</tbody>
 </table>
