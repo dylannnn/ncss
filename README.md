@@ -1,4 +1,4 @@
-![Named Cascading Style Sheets](https://dummyimage.com/1000x300/ff191a/ffffff&text=Named Cascading Style Sheets)
+![Named Cascading Style Sheets](https://dummyimage.com/1000x300/ff191a/ffffff&text=Named+Cascading+Style+Sheets)
 ![Naming conventions and best practices for CSS](http://dummyimage.com/1000x100/00b232/ffffff&text=Naming+conventions+and+best+practices+for+CSS)
 
 
