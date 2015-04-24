@@ -280,11 +280,11 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 Functional classes
 ------------------
 
-Functional classes using **pure CSS** are marked with the <code>has</code> and <code>fn</code> prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand can be identified by the <code>js</code> prefix. Both should never have styles for painting, use an additional **type** class for this purpose.
+Functional classes using **pure CSS** are marked with the <code>fn</code>, <code>has</code> and <code>is</code> prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand can be identified by the <code>js</code> prefix. Both should never have styles for painting, use an additional **type** class for this purpose.
 
-Syntax: <code>.has-action</code> or <code>.fn-action</code>
+Syntax:  <code>.fn-action</code>, <code>.has-context</code> and <code>.is-state</code>
 
-Syntax: <code>.js-action</code> or <code>.js-context</code>
+Syntax: <code>.js-action</code> and <code>.js-context</code>
 
 <table>
 	<thead>
@@ -296,14 +296,14 @@ Syntax: <code>.js-action</code> or <code>.js-context</code>
 	</thead>
 	<tbody>
 		<tr>
-			<td>has-</td>
-			<td>*</td>
-			<td>.has-tooltip</td>
-		</tr>
-		<tr>
 			<td>fn-</td>
 			<td>*</td>
 			<td>.fn-toggle</td>
+		</tr>
+		<tr>
+			<td>has-</td>
+			<td>*</td>
+			<td>.has-tooltip</td>
 		</tr>
 		<tr>
 			<td>is-</td>
@@ -335,7 +335,7 @@ Syntax: <code>.namespace</code>
 	</thead>
 	<tbody>
 		<tr>
-			<td>foo-</td>
+			<td>namespace-</td>
 			<td>*</td>
 		</tr>
 	</tbody>
