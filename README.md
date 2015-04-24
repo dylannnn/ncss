@@ -331,12 +331,14 @@ Syntax: <code>.namespace</code>
 		<tr>
 			<th>Prefix</th>
 			<th>Tags</th>
+			<th>Example</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>namespace-</td>
 			<td>*</td>
+			<td>fb-</td>
 		</tr>
 	</tbody>
 </table>
@@ -345,36 +347,36 @@ Syntax: <code>.namespace</code>
 Example
 -------
 
-A class <code>.foo-box-content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.foo-content</code> article tag. I picked the namespace <code>foo</code> from an conceived framework called foobar.
+A class <code>.fb-box-content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.fb-content</code> article tag. I picked the namespace <code>fb</code> from an conceived framework called foobar.
 
 
 HTML:
 
 <pre>
-&lt;header id="header" class="foo-header"&gt; 
-	&lt;h1 class="foo-title-website"&gt;Website&lt;/h1&gt;
+&lt;header id="header" class="fb-header"&gt; 
+	&lt;h1 class="fb-title-website"&gt;Website&lt;/h1&gt;
 &lt;/header&gt;
 
-&lt;div class="foo-main foo-wrapper"&gt;
+&lt;div class="fb-main fb-wrapper"&gt;
 
-	&lt;article id="content" class="foo-content"&gt;
-		&lt;h2 class="foo-title foo-title-content"&gt;Headline&lt;/h2&gt;
-		&lt;div class="foo-box foo-box-content"&gt;Content&lt;/div&gt;
+	&lt;article id="content" class="fb-content"&gt;
+		&lt;h2 class="fb-title fb-title-content"&gt;Headline&lt;/h2&gt;
+		&lt;div class="fb-box fb-box-content"&gt;Content&lt;/div&gt;
 	&lt;/article&gt;
 
-	&lt;aside id="sidebar" class="foo-sidebar"&gt;
-		&lt;h3 class="foo-title foo-title-sidebar"&gt;Headline&lt;/h3&gt;
-		&lt;ul class="foo-list-sidebar"&gt;
+	&lt;aside id="sidebar" class="fb-sidebar"&gt;
+		&lt;h3 class="fb-title fb-title-sidebar"&gt;Headline&lt;/h3&gt;
+		&lt;ul class="fb-list-sidebar"&gt;
 			&lt;li&gt;Item&lt;/li&gt;
-			&lt;li class="foo-js-active foo-item-active"&gt;Active item&lt;/li&gt;
+			&lt;li class="fb-js-active fb-item-active"&gt;Active item&lt;/li&gt;
 			&lt;li&gt;Item&lt;/li&gt;
 		&lt;/ul&gt;
 	&lt;/aside&gt;
 
 &lt;/div&gt;
 
-&lt;footer id="footer" class="foo-footer"&gt;
-	&lt;div class="foo-box foo-box-footer"&gt;Powered by NCSS&lt;/div&gt;
+&lt;footer id="footer" class="fb-footer"&gt;
+	&lt;div class="fb-box fb-box-footer"&gt;Powered by NCSS&lt;/div&gt;
 &lt;/footer&gt;
 </pre>
 
@@ -391,13 +393,13 @@ CSS:
 
 /* @section 1. layout */
 
-.foo-content
+.fb-content
 {
 	float: right;
 	width: 80%;
 }
 
-.foo-sidebar
+.fb-sidebar
 {
 	float: left;
 	width: 20%;
@@ -405,7 +407,7 @@ CSS:
 
 /* @section 2. boxes */
 
-.foo-box
+.fb-box
 {
 	box-sizing: border-box;
 	padding: 1em;
@@ -413,17 +415,17 @@ CSS:
 
 /* @section 3. titles */
 
-.foo-title
+.fb-title
 {
 	font-size: 1em;
 }
 
-.foo-title-content
+.fb-title-content
 {
 	color: #555;
 }
 
-.foo-title-sidebar
+.fb-title-sidebar
 {
 	color: #777;
 }
