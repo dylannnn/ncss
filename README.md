@@ -121,6 +121,11 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 			<td>.code-content</td>
 		</tr>
 		<tr>
+			<td>data-</td>
+			<td>datalist</td>
+			<td>.data-content</td>
+		</tr>
+		<tr>
 			<td>field-</td>
 			<td>input, select, textarea</td>
 			<td>.field-content</td>
