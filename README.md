@@ -197,11 +197,11 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 Modifier classes
 ----------------
 
-There are no limitation to extend your **type classes** with individual **state**, **description** and **position** modifier. Proper handling of **context** and **type** should prevent the need of adjoining classes.
+There are no limitation to extend your **type classes** with individual **state**, **size** and **position** modifier. Proper handling of **context** and **type** should prevent the need of adjoining classes.
 
 Syntax: <code>.type-state</code> and <code>.type-context-state</code>
 
-Syntax: <code>.type-description</code> and <code>.type-context-description</code>
+Syntax: <code>.type-size</code> and <code>.type-context-size</code>
 
 Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 
@@ -238,12 +238,17 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 			<td>.item-touch</td>
 		</tr>
 		<tr>
-			<td colspan="3">Description</td>
+			<td colspan="3">Size</td>
 		</tr>
 		<tr>
 			<td>-small</td>
 			<td>*</td>
 			<td>.item-small</td>
+		</tr>
+		<tr>
+			<td>-medium</td>
+			<td>*</td>
+			<td>.item-medium</td>
 		</tr>
 		<tr>
 			<td>-large</td>
