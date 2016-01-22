@@ -121,6 +121,11 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 			<td>.code-content</td>
 		</tr>
 		<tr>
+			<td>column-</td>
+			<td>td</td>
+			<td>.column-content</td>
+		</tr>
+		<tr>
 			<td>data-</td>
 			<td>datalist</td>
 			<td>.data-content</td>
@@ -174,6 +179,11 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 			<td>table-</td>
 			<td>table</td>
 			<td>.table-content</td>
+		</tr>
+		<tr>
+			<td>row-</td>
+			<td>tr</td>
+			<td>.row-content</td>
 		</tr>
 		<tr>
 			<td>text-</td>
