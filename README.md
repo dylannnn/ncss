@@ -49,6 +49,10 @@ Syntax: <code>.context</code>
 	</thead>
 	<tbody>
 		<tr>
+			<td>.body</td>
+			<td>body</td>
+		</tr>
+		<tr>
 			<td>.content</td>
 			<td>article</td>
 		</tr>
