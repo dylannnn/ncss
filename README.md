@@ -126,7 +126,7 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 		</tr>
 		<tr>
 			<td>col-</td>
-			<td>td</td>
+			<td>td, th</td>
 			<td>.col-content</td>
 		</tr>
 		<tr>
