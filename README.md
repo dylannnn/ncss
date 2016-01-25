@@ -125,9 +125,9 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 			<td>.code-content</td>
 		</tr>
 		<tr>
-			<td>column-</td>
+			<td>col-</td>
 			<td>td</td>
-			<td>.column-content</td>
+			<td>.col-content</td>
 		</tr>
 		<tr>
 			<td>data-</td>
