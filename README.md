@@ -115,6 +115,11 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 			<td>.box-content</td>
 		</tr>
 		<tr>
+			<td>break-</td>
+			<td>hr</td>
+			<td>.break-content</td>
+		</tr>
+		<tr>
 			<td>button-</td>
 			<td>a, button</td>
 			<td>.button-content</td>
