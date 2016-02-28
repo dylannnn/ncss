@@ -314,9 +314,9 @@ Syntax: <code>.type-position</code> and <code>.type-context-position</code>
 Functional classes
 ------------------
 
-Functional classes using **pure CSS** are marked with the <code>fn</code> and <code>has</code> prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand can be identified by the <code>js</code> prefix. Both should never have styles for painting, use an additional **type** class for this purpose.
+Functional classes using **pure CSS** are marked with the <code>is</code>, <code>fn</code> and <code>has</code> prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand can be identified by the <code>js</code> prefix. Both should never have styles for painting, use an additional **type** class for this purpose.
 
-Syntax:  <code>.fn-action</code> and <code>.has-context</code>
+Syntax:  <code>.is-state</code>, <code>.fn-action</code> and <code>.has-context</code>
 
 Syntax: <code>.js-action</code> and <code>.js-context</code>
 
@@ -329,6 +329,11 @@ Syntax: <code>.js-action</code> and <code>.js-context</code>
 		</tr>
 	</thead>
 	<tbody>
+		<tr>
+			<td>is-</td>
+			<td>*</td>
+			<td>.is-active</td>
+		</tr>
 		<tr>
 			<td>fn-</td>
 			<td>*</td>
@@ -386,7 +391,7 @@ HTML:
 	&lt;h1 class="fb-title-website"&gt;Website&lt;/h1&gt;
 &lt;/header&gt;
 
-&lt;div class="fb-main fb-wrapper"&gt;
+&lt;main class="fb-main fb-wrapper"&gt;
 
 	&lt;article id="content" class="fb-content"&gt;
 		&lt;h2 class="fb-title fb-title-content"&gt;Headline&lt;/h2&gt;
@@ -402,7 +407,7 @@ HTML:
 		&lt;/ul&gt;
 	&lt;/aside&gt;
 
-&lt;/div&gt;
+&lt;/main&gt;
 
 &lt;footer id="footer" class="fb-footer"&gt;
 	&lt;div class="fb-box fb-box-footer"&gt;Powered by NCSS&lt;/div&gt;
