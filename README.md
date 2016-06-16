@@ -27,10 +27,10 @@ There is no specification the use **hyphen**, **underscore** or **camelcase** fo
 **N**amed **C**ascading **S**tyle **S**heets are divided into:
 
 - [Structural classes](#structural-classes)
+- [Component classes](#component-classes)
 - [Type classes](#type-classes)
 - [Modifier classes](#modifier-classes)
 - [Functional classes](#functional-classes)
-- [Component classes](#component-classes)
 - [Namespace classes](#namespace-classes)
 
 
@@ -84,6 +84,31 @@ Syntax: <code>.{context}</code>
 		<tr>
 			<td>div</td>
 			<td>.wrapper</td>
+		</tr>
+	</tbody>
+</table>
+
+
+Component classes
+-----------------
+
+Component classes provide a unit for the underlaying elements. Classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention.
+
+Syntax: <code>.component-{name}</code>
+
+<table>
+	<thead>
+		<tr>
+			<th>Prefix</th>
+			<th>Tag</th>
+			<th>Example</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>component-</td>
+			<td>*</td>
+			<td>.component-accordion</td>
 		</tr>
 	</tbody>
 </table>
@@ -354,31 +379,6 @@ Syntax: <code>.js-{action}</code> and <code>.js-{context}</code>
 			<td>js-</td>
 			<td>*</td>
 			<td>.js-click</td>
-		</tr>
-	</tbody>
-</table>
-
-
-Component classes
------------------
-
-Component classes provide a unit for the underlaying elements. Classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention.
-
-Syntax: <code>.component-{name}</code>
-
-<table>
-	<thead>
-		<tr>
-			<th>Prefix</th>
-			<th>Tag</th>
-			<th>Example</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>component-</td>
-			<td>*</td>
-			<td>.component-accordion</td>
 		</tr>
 	</tbody>
 </table>
