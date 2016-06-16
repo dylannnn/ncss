@@ -156,7 +156,7 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 		</tr>
 		<tr>
 			<td>image-</td>
-			<td>img, object</td>
+			<td>img, object, svg</td>
 			<td>.image-content</td>
 		</tr>
 		<tr>
