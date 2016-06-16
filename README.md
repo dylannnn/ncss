@@ -180,6 +180,11 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 			<td>.list-content</td>
 		</tr>
 		<tr>
+			<td>shape-</td>
+			<td>cicle, path, rect, symbol, use</td>
+			<td>.shape-content</td>
+		</tr>
+		<tr>
 			<td>set-</td>
 			<td>div, fieldset</td>
 			<td>.set-content</td>
