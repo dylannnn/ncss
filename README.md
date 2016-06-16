@@ -30,6 +30,7 @@ There is no specification the use **hyphen**, **underscore** or **camelcase** fo
 - [Type classes](#type-classes)
 - [Modifier classes](#modifier-classes)
 - [Functional classes](#functional-classes)
+- [Component classes](#component-classes)
 - [Namespace classes](#namespace-classes)
 
 
@@ -221,7 +222,7 @@ Syntax: <code>.type</code> and <code>.type-context</code>
 Modifier classes
 ----------------
 
-There are no limitation to extend your **type classes** with individual **state**, **size** and **position** modifier. Proper handling of **context** and **type** should prevent the need of adjoining classes.
+There is no limitation to extend your **type classes** with individual **state**, **size** and **position** modifier. Proper handling of **context** and **type** should prevent the need of adjoining classes.
 
 Syntax: <code>.type-state</code> and <code>.type-context-state</code>
 
@@ -353,6 +354,31 @@ Syntax: <code>.js-action</code> and <code>.js-context</code>
 			<td>js-</td>
 			<td>*</td>
 			<td>.js-click</td>
+		</tr>
+	</tbody>
+</table>
+
+
+Component classes
+-----------------
+
+Component classes provide a semantic context for the underlaying component parts. Classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention.
+
+Syntax: <code>.component</code>
+
+<table>
+	<thead>
+		<tr>
+			<th>Prefix</th>
+			<th>Tags</th>
+			<th>Example</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>component-</td>
+			<td>*</td>
+			<td>tab-</td>
 		</tr>
 	</tbody>
 </table>
