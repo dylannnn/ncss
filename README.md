@@ -37,53 +37,53 @@ There is no specification the use **hyphen**, **underscore** or **camelcase** fo
 Structural classes
 ------------------
 
-Layout and structural classes provide a semantic context for underlaying elements. Classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention.
+Structural classes provide a semantic context for the underlaying elements. Classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention.
 
-Syntax: <code>.context</code>
+Syntax: <code>.{context}</code>
 
 <table>
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Tags</th>
+			<th>Tag</th>
+			<th>Example</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>.body</td>
 			<td>body</td>
+			<td>.body</td>
 		</tr>
 		<tr>
-			<td>.content</td>
 			<td>article</td>
+			<td>.content</td>
 		</tr>
 		<tr>
-			<td>.footer</td>
 			<td>footer</td>
+			<td>.footer</td>
 		</tr>
 		<tr>
-			<td>.header</td>
 			<td>header</td>
+			<td>.header</td>
 		</tr>
 		<tr>
-			<td>.navigation</td>
 			<td>nav</td>
+			<td>.navigation</td>
 		</tr>
 		<tr>
-			<td>.section</td>
 			<td>section</td>
+			<td>.section</td>
 		</tr>
 		<tr>
-			<td>.sidebar</td>
 			<td>side</td>
+			<td>.sidebar</td>
 		</tr>
 		<tr>
-			<td>.main</td>
 			<td>main</td>
+			<td>.main</td>
 		</tr>
 		<tr>
-			<td>.wrapper</td>
 			<td>div</td>
+			<td>.wrapper</td>
 		</tr>
 	</tbody>
 </table>
@@ -94,13 +94,13 @@ Type classes
 
 Type classes are the foundation to write **re-usable**, **modular** and **semantic** CSS - tell the reader what kind of elements, tags and sections are affected. Keep in mind that structural tags are rather unsuitable to contain a **type** prefix.
 
-Syntax: <code>.type</code> and <code>.type-context</code>
+Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 
 <table>
 	<thead>
 		<tr>
 			<th>Prefix</th>
-			<th>Tags</th>
+			<th>Tag</th>
 			<th>Example</th>
 		</tr>
 	</thead>
@@ -224,17 +224,17 @@ Modifier classes
 
 There is no limitation to extend your **type classes** with individual **state**, **size** and **position** modifier. Proper handling of **context** and **type** should prevent the need of adjoining classes.
 
-Syntax: <code>.type-state</code> and <code>.type-context-state</code>
+Syntax: <code>.{type}-{state}</code> and <code>.{type}-{context}-{state}</code>
 
-Syntax: <code>.type-size</code> and <code>.type-context-size</code>
+Syntax: <code>.{type}-{size}</code> and <code>.{type}-{context}-{size}</code>
 
-Syntax: <code>.type-position</code> and <code>.type-context-position</code>
+Syntax: <code>.{type}-{position}</code> and <code>.{type}-{context}-{position}</code>
 
 <table>
 	<thead>
 		<tr>
 			<th>Suffix</th>
-			<th>Tags</th>
+			<th>Tag</th>
 			<th>Example</th>
 		</tr>
 	</thead>
@@ -322,15 +322,15 @@ Functional classes
 
 Functional classes using **pure CSS** are marked with the <code>is</code>, <code>fn</code> and <code>has</code> prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand can be identified by the <code>js</code> prefix. Both should never have styles for painting, use an additional **type** class for this purpose.
 
-Syntax:  <code>.is-state</code>, <code>.fn-action</code> and <code>.has-context</code>
+Syntax: <code>.is-{state}</code>, <code>.fn-{action}</code> and <code>.has-{context}</code>
 
-Syntax: <code>.js-action</code> and <code>.js-context</code>
+Syntax: <code>.js-{action}</code> and <code>.js-{context}</code>
 
 <table>
 	<thead>
 		<tr>
 			<th>Prefix</th>
-			<th>Tags</th>
+			<th>Tag</th>
 			<th>Example</th>
 		</tr>
 	</thead>
@@ -362,15 +362,15 @@ Syntax: <code>.js-action</code> and <code>.js-context</code>
 Component classes
 -----------------
 
-Component classes provide a semantic context for the underlaying component parts. Classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention.
+Component classes provide a unit for the underlaying elements. Classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention.
 
-Syntax: <code>.component</code>
+Syntax: <code>.component-{name}</code>
 
 <table>
 	<thead>
 		<tr>
 			<th>Prefix</th>
-			<th>Tags</th>
+			<th>Tag</th>
 			<th>Example</th>
 		</tr>
 	</thead>
@@ -378,7 +378,7 @@ Syntax: <code>.component</code>
 		<tr>
 			<td>component-</td>
 			<td>*</td>
-			<td>tab-</td>
+			<td>.component-accordion</td>
 		</tr>
 	</tbody>
 </table>
@@ -389,21 +389,21 @@ Namespace classes
 
 Consider to pick a unique namespace once you provide a framework to third party applications or generally want to prevent naming conflicts inside your project.
 
-Syntax: <code>.namespace</code>
+Syntax: <code>.{namespace}-{type}</code> and <code>.{namespace}-{context}</code>
 
 <table>
 	<thead>
 		<tr>
 			<th>Prefix</th>
-			<th>Tags</th>
+			<th>Tag</th>
 			<th>Example</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>namespace-</td>
+			<td>{namespace}-</td>
 			<td>*</td>
-			<td>fb-</td>
+			<td>fb-main</td>
 		</tr>
 	</tbody>
 </table>
