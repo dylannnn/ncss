@@ -31,7 +31,8 @@ There is no specification the use **hyphen**, **underscore** or **camelcase** fo
 - [Type classes](#type-classes)
 - [Modifier classes](#modifier-classes)
 - [Functional classes](#functional-classes)
-- [Namespace classes](#namespace-classes)
+- [Namespaces](#namespaces)
+- [Exceptions](#exceptions)
 
 
 Structural classes
@@ -88,7 +89,7 @@ Syntax: <code>.{context}</code>
 Component classes
 -----------------
 
-Component classes provide a unit for the underlaying elements. Classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention. Type classes should be used over component classes as they provide more information.
+Component classes provide a unit for the underlaying elements. Classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention. **Type classes** should be used over **component classes** as they provide more information.
 
 Syntax: <code>.component-{name}</code>
 
@@ -385,8 +386,8 @@ Syntax: <code>.js-{action}</code> and <code>.js-{context}</code>
 </table>
 
 
-Namespace classes
------------------
+Namespaces
+----------
 
 Consider to pick a unique namespace once you provide a framework to third party applications or generally want to prevent naming conflicts inside your project.
 
@@ -404,7 +405,7 @@ Syntax: <code>.{namespace}-{type}</code> and <code>.{namespace}-{context}</code>
 		<tr>
 			<td>{namespace}-</td>
 			<td>*</td>
-			<td>fb-main</td>
+			<td>.fb-main</td>
 		</tr>
 	</tbody>
 </table>
@@ -414,6 +415,23 @@ Exceptions
 ----------
 
 Syntax: <code>.wrapper-{type}</code>
+
+<table>
+	<thead>
+		<tr>
+			<th>Prefix</th>
+			<th>Tag</th>
+			<th>Example</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>wrapper-</td>
+			<td>div, section</td>
+			<td>.wrapper-body</td>
+		</tr>
+	</tbody>
+</table>
 
 
 Example
