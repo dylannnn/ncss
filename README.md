@@ -1,5 +1,5 @@
-![Named Cascading Style Sheets](https://dummyimage.com/1000x300/33a9dc/ffffff&text=Named+Cascading+Style+Sheets)
-![Naming conventions and best practices for CSS](http://dummyimage.com/1000x100/33a9dc/ffffff&text=Naming+conventions+and+best+practices+for+CSS)
+![Named Cascading Style Sheets](https://dummyimage.com/1000x300/06e690/ffffff&text=Named+Cascading+Style+Sheets)
+![Naming conventions and best practices for CSS](http://dummyimage.com/1000x100/06e690/ffffff&text=Naming+conventions+and+best+practices+for+CSS)
 
 
 NCSS
