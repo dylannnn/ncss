@@ -88,7 +88,7 @@ Syntax: <code>.{context}</code>
 Component classes
 -----------------
 
-Component classes provide a unit for the underlaying elements. Classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention.
+Component classes provide a unit for the underlaying elements. Classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention. Type classes should be used over component classes as they provide more information.
 
 Syntax: <code>.component-{name}</code>
 
