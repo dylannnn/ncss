@@ -389,7 +389,7 @@ Syntax: <code>.js-{action}</code> and <code>.js-{context}</code>
 Namespaces
 ----------
 
-Consider to pick a unique namespace once you provide a framework to third party applications or generally want to prevent naming conflicts inside your project.
+Consider to pick a unique namespace once you provide a framework to third party applications or generally want to prevent naming conflicts inside your project. Never mix up namespaces and follow the pretended naming of third party components.
 
 Syntax: <code>.{namespace}-{type}</code> and <code>.{namespace}-{context}</code>
 
