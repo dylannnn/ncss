@@ -81,10 +81,6 @@ Syntax: <code>.{context}</code>
 			<td>main</td>
 			<td>.main</td>
 		</tr>
-		<tr>
-			<td>div</td>
-			<td>.wrapper</td>
-		</tr>
 	</tbody>
 </table>
 
@@ -240,6 +236,11 @@ Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 			<td>iframe, video</td>
 			<td>.video-content</td>
 		</tr>
+		<tr>
+			<td>wrapper-</td>
+			<td>div, section</td>
+			<td>.wrapper-content</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -368,7 +369,7 @@ Syntax: <code>.js-{action}</code> and <code>.js-{context}</code>
 		<tr>
 			<td>fn-</td>
 			<td>*</td>
-			<td>.fn-toggle</td>
+			<td>.fn-clearfix</td>
 		</tr>
 		<tr>
 			<td>has-</td>
@@ -407,6 +408,12 @@ Syntax: <code>.{namespace}-{type}</code> and <code>.{namespace}-{context}</code>
 		</tr>
 	</tbody>
 </table>
+
+
+Exceptions
+----------
+
+Syntax: <code>.wrapper-{type}</code>
 
 
 Example
