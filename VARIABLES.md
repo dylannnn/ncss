@@ -7,7 +7,7 @@ Variables
 Colors
 ------
 
-The base palette should be a set of fixed hex values:
+The color palette is a set of fixed hex values:
 
 <pre>
 :root
@@ -31,6 +31,8 @@ Abstract colors contain a **light** or **dark** suffix extention:
 
 Gradients
 ---------
+
+The gradient palette is based on the color variables:
 
 <pre>
 :root
@@ -59,7 +61,7 @@ Fonts
 :root
 {
 	--font-primary: arial, sans-serif;
-	--font-code: monospace, sans-serif;
+	--font-code: monospace, arial, sans-serif;
 	--font-icon: 'icon';
 }
 </pre>
