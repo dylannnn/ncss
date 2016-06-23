@@ -12,9 +12,9 @@ The base palette should be a set of fixed hex values:
 <pre>
 :root
 {
-	--rs-color-primary: #ff3300;
-	--rs-color-secondary: #6600ff;
-	--rs-color-tertiary: #cc0033;
+	--color-primary: #ff3300;
+	--color-secondary: #6600ff;
+	--color-tertiary: #cc0033;
 }
 </pre>
 
@@ -23,8 +23,8 @@ Abstract colors contain a **light** or **dark** suffix extention:
 <pre>
 :root
 {
-	--rs-color-primary-light: color(var(--rs-color-primary) l(60%));
-	--rs-color-primary-dark: color(var(--rs-color-primary) l(40%));
+	--color-primary-light: color(var(--color-primary) l(60%));
+	--color-primary-dark: color(var(--color-primary) l(40%));
 }
 </pre>
 
@@ -35,6 +35,15 @@ Gradients
 
 Fonts
 -----
+
+<pre>
+:root
+{
+	--font-primary: arial, sans-serif;
+	--font-code: monospace, sans-serif;
+	--font-icon: 'icon';
+}
+</pre>
 
 
 Queries
