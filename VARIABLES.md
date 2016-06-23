@@ -32,6 +32,25 @@ Abstract colors contain a **light** or **dark** suffix extention:
 Gradients
 ---------
 
+<pre>
+:root
+{
+	--gradient-primary: linear-gradient(var(--rs-color-primary), var(--rs-color-primary-light));
+	--gradient-secondary: linear-gradient(var(--rs-color-secondary), var(--rs-color-secondary-dark));
+	--gradient-tertiary: linear-gradient(var(--rs-color-tertiary-light), var(--rs-color-tertiary-dark));
+}
+</pre>
+
+Abstract gradients contain a **light** or **dark** suffix extention:
+
+<pre>
+:root
+{
+	--gradient-primary-light: linear-gradient(var(--rs-color-primary), var(--rs-color-primary-light) l(60%));
+	--gradient-primary-dark: linear-gradient(var(--rs-color-primary), var(--rs-color-primary-light) l(40%));
+}
+</pre>
+
 
 Fonts
 -----
