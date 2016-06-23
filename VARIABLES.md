@@ -18,7 +18,7 @@ The color palette is a set of fixed hex values:
 }
 </pre>
 
-Abstract colors contain a **light** or **dark** suffix extention:
+Abstract color variables contain a **light** or **dark** suffix extention:
 
 <pre>
 :root
@@ -32,7 +32,7 @@ Abstract colors contain a **light** or **dark** suffix extention:
 Gradients
 ---------
 
-The gradient palette is based on the color variables:
+The gradient palette is based on the color palette:
 
 <pre>
 :root
@@ -43,7 +43,7 @@ The gradient palette is based on the color variables:
 }
 </pre>
 
-Abstract gradients contain a **light** or **dark** suffix extention:
+Abstract gradient variables contain a **light** or **dark** suffix extention:
 
 <pre>
 :root
