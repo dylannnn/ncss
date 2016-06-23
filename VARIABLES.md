@@ -1,13 +1,13 @@
 Variables
 =========
 
-> This guide is based on the CSS4 standard by W3C.
+> The variables naming conventions and best practices are based on the latest CSS4 specification.
 
 
 Colors
 ------
 
-The base color palette should be a set of fixed hex values:
+The base palette should be a set of fixed hex values:
 
 <pre>
 :root
@@ -15,6 +15,16 @@ The base color palette should be a set of fixed hex values:
 	--rs-color-primary: #ff3300;
 	--rs-color-secondary: #6600ff;
 	--rs-color-tertiary: #cc0033;
+}
+</pre>
+
+Abstract colors contain a **light** or **dark** suffix extention:
+
+<pre>
+:root
+{
+	--rs-color-primary-light: color(var(--rs-color-primary) l(60%));
+	--rs-color-primary-dark: color(var(--rs-color-primary) l(40%));
 }
 </pre>
 
