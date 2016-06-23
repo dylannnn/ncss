@@ -46,8 +46,8 @@ Abstract gradients contain a **light** or **dark** suffix extention:
 <pre>
 :root
 {
-	--gradient-primary-light: linear-gradient(var(--rs-color-primary), var(--rs-color-primary-light) l(60%));
-	--gradient-primary-dark: linear-gradient(var(--rs-color-primary), var(--rs-color-primary-light) l(40%));
+	--gradient-primary-light: linear-gradient(var(--rs-color-primary), var(--rs-color-primary) l(70%));
+	--gradient-primary-dark: linear-gradient(var(--rs-color-primary), var(--rs-color-primary) l(30%));
 }
 </pre>
 
