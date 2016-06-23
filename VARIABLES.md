@@ -35,9 +35,9 @@ Gradients
 <pre>
 :root
 {
-	--gradient-primary: linear-gradient(var(--rs-color-primary), var(--rs-color-primary-light));
-	--gradient-secondary: linear-gradient(var(--rs-color-secondary), var(--rs-color-secondary-dark));
-	--gradient-tertiary: linear-gradient(var(--rs-color-tertiary-light), var(--rs-color-tertiary-dark));
+	--gradient-primary: linear-gradient(var(--color-primary), var(--color-primary-light));
+	--gradient-secondary: linear-gradient(var(--color-secondary), var(--color-secondary-dark));
+	--gradient-tertiary: linear-gradient(var(--color-tertiary-light), var(--color-tertiary-dark));
 }
 </pre>
 
@@ -46,8 +46,8 @@ Abstract gradients contain a **light** or **dark** suffix extention:
 <pre>
 :root
 {
-	--gradient-primary-light: linear-gradient(var(--rs-color-primary), var(--rs-color-primary) l(70%));
-	--gradient-primary-dark: linear-gradient(var(--rs-color-primary), var(--rs-color-primary) l(30%));
+	--gradient-primary-light: linear-gradient(var(--color-primary), var(--color-primary) l(70%));
+	--gradient-primary-dark: linear-gradient(var(--color-primary), var(--color-primary) l(30%));
 }
 </pre>
 
