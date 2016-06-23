@@ -7,7 +7,7 @@ Variables
 Colors
 ------
 
-The color palette is a set of fixed hex values:
+The color palette is a set of fixed hex values, use the <code>gray()</code> function instead of <code>--color-gray-*</code> variables.
 
 <pre>
 :root
@@ -32,7 +32,7 @@ Abstract color variables contain a **light** or **dark** suffix extention:
 Gradients
 ---------
 
-The gradient palette is based on the color palette:
+The gradient palette is based on the defined color palette:
 
 <pre>
 :root
