@@ -51,12 +51,16 @@ Syntax: <code>.{context}</code>
 	</thead>
 	<tbody>
 		<tr>
-			<td>body</td>
-			<td>.body</td>
-		</tr>
-		<tr>
 			<td>article</td>
 			<td>.content</td>
+		</tr>
+		<tr>
+			<td>address</td>
+			<td>.address</td>
+		</tr>
+		<tr>
+			<td>body</td>
+			<td>.body</td>
 		</tr>
 		<tr>
 			<td>footer</td>
@@ -65,6 +69,10 @@ Syntax: <code>.{context}</code>
 		<tr>
 			<td>header</td>
 			<td>.header</td>
+		</tr>
+		<tr>
+			<td>main</td>
+			<td>.main</td>
 		</tr>
 		<tr>
 			<td>nav</td>
@@ -77,10 +85,6 @@ Syntax: <code>.{context}</code>
 		<tr>
 			<td>side</td>
 			<td>.sidebar</td>
-		</tr>
-		<tr>
-			<td>main</td>
-			<td>.main</td>
 		</tr>
 	</tbody>
 </table>
