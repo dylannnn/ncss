@@ -38,9 +38,9 @@ There is no specification the use **hyphen**, **underscore** or **camelcase** fo
 Structural classes
 ------------------
 
-Structural classes provide a semantic context for the underlaying elements. Classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention.
+Structural classes provide a semantic context for the underlaying elements.
 
-Syntax: <code>.{context}</code>
+Syntax: <code>.{context}</code> and <code>.{context}-{name}</code>
 
 <table>
 	<thead>
@@ -93,7 +93,7 @@ Syntax: <code>.{context}</code>
 Component classes
 -----------------
 
-Component classes provide a unit for the underlaying elements. Classnames are **stand-alone** and should never contain a **prefix** or **suffix** extention. **Type classes** should be used over **component classes** as they provide more information.
+Component classes provide a unit for the underlaying elements. **Type classes** should be used over **component classes** as they provide more information.
 
 Syntax: <code>.component-{name}</code>
 
