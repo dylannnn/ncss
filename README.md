@@ -93,7 +93,7 @@ Syntax: <code>.{context}</code> and <code>.{context}-{name}</code>
 Component classes
 -----------------
 
-Component classes provide a group context for the underlaying elements and are preferably utilized to define a unit. **Type classes** should be used over **component classes** as they provide more information.
+Component classes provide a group context for the underlaying elements and are preferably utilized to define a unit.
 
 Syntax: <code>.component-{name}</code>
 
