@@ -38,7 +38,7 @@ There is no specification the use **hyphen**, **underscore** or **camelcase** fo
 Structural classes
 ------------------
 
-Structural classes provide a semantic context for the underlaying elements and are preferably utilized to define a layout.
+Structural classes provide a **semantic context** for the underlaying elements and are preferably utilized to define a layout.
 
 Syntax: <code>.{context}</code> and <code>.{context}-{name}</code>
 
@@ -93,7 +93,7 @@ Syntax: <code>.{context}</code> and <code>.{context}-{name}</code>
 Component classes
 -----------------
 
-Component classes provide a group context for the underlaying elements and are preferably utilized to define a unit.
+Component classes provide a **group context** for the underlaying elements and are preferably utilized to define a working unit.
 
 Syntax: <code>.component-{name}</code>
 
