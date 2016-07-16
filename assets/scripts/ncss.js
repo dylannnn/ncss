@@ -16,7 +16,6 @@
 			'section',
 			'sidebar',
 			'component-',
-			'component_',
 			'audio',
 			'box',
 			'break',
@@ -43,13 +42,9 @@
 			'video',
 			'wrapper',
 			'is-',
-			'is_',
 			'fn-',
-			'fn_',
 			'has-',
-			'has_',
-			'js-',
-			'js_'
+			'js-'
 		],
 		providerArray = [],
 		resultArray = [],
