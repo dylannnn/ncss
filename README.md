@@ -1,11 +1,11 @@
 ![Named Cascading Style Sheets](https://dummyimage.com/1000x300/5fb404/ffffff&text=Named+Cascading+Style+Sheets)
-![Naming conventions and best practices for CSS](http://dummyimage.com/1000x100/5fb404/ffffff&text=Naming+conventions+and+best+practices+for+CSS)
+![Naming convention for semantic CSS](http://dummyimage.com/1000x100/5fb404/ffffff&text=Naming+convention+for+semantic+CSS)
 
 
 NCSS
 ====
 
-> NCSS is a naming convention standard for **object oriented** and **atomic designed** CSS. Get rid of reading your HTML again and again to find out what elements, tags and sections are affected.
+> NCSS is a naming convention for semantic CSS. Get rid of reading your HTML again and again to find out what elements, tags and sections are affected.
 
 [![Build Status](https://img.shields.io/travis/redaxmedia/ncss.svg)](https://travis-ci.org/redaxmedia/ncss)
 [![Dependency Status](https://www.versioneye.com/user/projects/578ba907c3d40f0032cb1464/badge.svg)](https://www.versioneye.com/user/projects/578ba907c3d40f0032cb1464)
@@ -457,7 +457,7 @@ Syntax: <code>.wrapper-{type}</code>
 Conclusion
 ----------
 
-The goal of NCSS is to provide **semantic information** while reading CSS:
+The goal of **NCSS** is to provide **semantic information** while reading CSS:
 
 - What kind of elements, tags and sections are affected
 - What is the relation and inheritance of one class to another

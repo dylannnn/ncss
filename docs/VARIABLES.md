@@ -1,7 +1,7 @@
 Variables
 =========
 
-> The variables naming convention standard is based on the latest CSS4 specification.
+> A variables guideline based on the latest CSS4 specification.
 
 
 Colors
@@ -43,7 +43,7 @@ The gradient palette is based on the defined color variables:
 }
 </pre>
 
-Abstract gradient variables contain a **light** or **dark** suffix extention:
+Abstract gradient variables contain a **light** or **dark** suffix extension:
 
 <pre>
 :root

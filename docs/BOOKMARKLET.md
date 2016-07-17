@@ -1,7 +1,7 @@
 Bookmarklet
 ===========
 
-> Frontend developer's bookmarklet to validate against the NCSS standard.
+> A bookmarklet to validate a website against the NCSS convention.
 
 
 Getting started
@@ -10,7 +10,7 @@ Getting started
 - Add a fresh entry to your bookmark toolbar
 - Enter NCSS to the <code>name</code> field
 - Paste the content of [bookmarklet.js](/dist/scripts/bookmarklet.js) to the <code>address</code> field
-- Launch the NCSS bookmarklet on your website
+- Launch the NCSS bookmarklet on a website
 
 
 Indicators

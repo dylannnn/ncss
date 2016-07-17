@@ -1,7 +1,7 @@
 Examples
 ========
 
-> A collection of HTML and CSS examples for the NCSS standard.
+> A collection of HTML and CSS examples of the NCSS convention.
 
 
 HTML
