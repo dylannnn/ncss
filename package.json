@@ -1,7 +1,7 @@
 {
 	"name": "ncss",
-	"description": "NCSS is a naming convention standard",
-	"version": "1.7.1",
+	"description": "Naming conventions standard for CSS",
+	"version": "1.0.0",
 	"homepage": "http://ncss.redaxmedia.com.com",
 	"license": "GPL-3.0",
 	"author":

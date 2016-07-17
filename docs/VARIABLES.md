@@ -1,7 +1,7 @@
 Variables
 =========
 
-> The variables naming conventions and best practices are based on the latest CSS4 specification.
+> The variables naming convention standard is based on the latest CSS4 specification.
 
 
 Colors

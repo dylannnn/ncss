@@ -1,6 +1,6 @@
 {
 	"name": "redaxmedia/ncss",
-	"description": "Awesome statistics for any GitHub repository",
+	"description": "Naming conventions standard for CSS",
 	"version": "1.0.0",
 	"homepage": "http://ncss.redaxmedia.com",
 	"license": "GPL-3.0",

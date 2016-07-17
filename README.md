@@ -17,6 +17,7 @@ Massive CSS on **larger projects** used to cause issues:
 - Missing context to the project's layout and structure
 - Big ball of mud instead of modularization
 - Lack of inline documentation
+- No possibility for automated validation
 
 
 Getting started
@@ -448,98 +449,10 @@ Syntax: <code>.wrapper-{type}</code>
 </table>
 
 
-Example
--------
-
-A class <code>.fb-box-content</code> provides the information of a styled <code>div</code> tag located inside a structural <code>.fb-content</code> article tag. I picked the namespace <code>fb</code> from an conceived framework called foobar.
-
-
-HTML:
-
-<pre>
-&lt;header id="header" class="fb-header"&gt; 
-	&lt;h1 class="fb-title-website"&gt;Website&lt;/h1&gt;
-&lt;/header&gt;
-
-&lt;main class="fb-main fb-wrapper"&gt;
-
-	&lt;article id="content" class="fb-content"&gt;
-		&lt;h2 class="fb-title fb-title-content"&gt;Headline&lt;/h2&gt;
-		&lt;div class="fb-box fb-box-content"&gt;Content&lt;/div&gt;
-	&lt;/article&gt;
-
-	&lt;aside id="sidebar" class="fb-sidebar"&gt;
-		&lt;h3 class="fb-title fb-title-sidebar"&gt;Headline&lt;/h3&gt;
-		&lt;ul class="fb-list-sidebar"&gt;
-			&lt;li&gt;Item&lt;/li&gt;
-			&lt;li class="fb-js-active fb-item-active"&gt;Active item&lt;/li&gt;
-			&lt;li&gt;Item&lt;/li&gt;
-		&lt;/ul&gt;
-	&lt;/aside&gt;
-
-&lt;/main&gt;
-
-&lt;footer id="footer" class="fb-footer"&gt;
-	&lt;div class="fb-box fb-box-footer"&gt;Powered by NCSS&lt;/div&gt;
-&lt;/footer&gt;
-</pre>
-
-CSS:
-
-<pre>
-/**
- * @tableofcontents
- *
- * 1. layout
- * 2. boxes
- * 3. titles
- */
-
-/* @section 1. layout */
-
-.fb-content
-{
-	float: right;
-	width: 80%;
-}
-
-.fb-sidebar
-{
-	float: left;
-	width: 20%;
-}
-
-/* @section 2. boxes */
-
-.fb-box
-{
-	box-sizing: border-box;
-	padding: 1em;
-}
-
-/* @section 3. titles */
-
-.fb-title
-{
-	font-size: 1em;
-}
-
-.fb-title-content
-{
-	color: #555;
-}
-
-.fb-title-sidebar
-{
-	color: #777;
-}
-</pre>
-
-
 Conclusion
 ----------
 
-The goal of NCSS is to provide **semantic information** by reading other's people CSS.
+The goal of NCSS is to provide **semantic information** while reading CSS:
 
 - What kind of elements, tags and sections are affected
 - What is the relation and inheritance of one class to another
