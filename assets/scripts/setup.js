@@ -23,16 +23,16 @@
 
 	/* wording */
 
-	ncss.wording =
+	ncss.wordingArray =
 	{
 		enterNamespace: 'Enter one or multiple namespaces',
 		invalidClass: 'invalid class',
 		invalidTag: 'invalid tag'
 	};
 
-	/* setup */
+	/* prefix */
 
-	ncss.setup =
+	ncss.prefixArray =
 	{
 		'content':
 		[
