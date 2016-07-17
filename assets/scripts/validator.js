@@ -92,12 +92,12 @@
 
 					if(!element[i].validClass)
 					{
-						element[i].style = 'outline: 3px dashed rgba(255, 25, 25, 0.8)';
+						element[i].style = 'outline: 3px dashed rgba(255, 25, 25, 0.5)';
 						console.error(className + ' (' + wordingArray.invalidClass + ')');
 					}
 					else if(!element[i].validTag)
 					{
-						element[i].style = 'outline: 3px dashed rgba(255, 170, 25, 0.8)';
+						element[i].style = 'outline: 3px dashed rgba(255, 170, 25, 0.5)';
 						console.warn(tagName + '.' + className + ' (' + wordingArray.invalidTag + ')');
 					}
 				}
