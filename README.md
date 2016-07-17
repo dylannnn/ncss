@@ -457,3 +457,11 @@ The goal of NCSS is to provide **semantic information** while reading CSS:
 - What kind of elements, tags and sections are affected
 - What is the relation and inheritance of one class to another
 - Where is the most accurate place to add new declarations
+
+
+Further reading
+---------------
+
+- [Bookmarklet](/docs/BOOKMARKLET.md)
+- [Examples](/docs/EXAMPLES.md)
+- [Variables](/docs/VARIABLES.md)
