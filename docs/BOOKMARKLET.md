@@ -9,7 +9,7 @@ Getting started
 
 - Add a fresh entry to your bookmark toolbar
 - Enter NCSS to the <code>name</code> field
-- Paste the content of <a href="https://raw.githubusercontent.com/redaxmedia/ncss/master/dist/scripts/bookmarklet.js">bookmarklet.js</a> to the <code>address</code> field
+- Paste the content of [bookmarklet.js](/dist/scripts/bookmarklet.js) to the <code>address</code> field
 - Launch the NCSS bookmarklet on your website
 
 
