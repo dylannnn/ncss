@@ -1,0 +1,26 @@
+{
+	"boss": true,
+	"browser": true,
+	"curly": true,
+	"eqeqeq": true,
+	"eqnull": true,
+	"latedef": true,
+	"loopfunc": true,
+	"maxdepth": 10,
+	"maxparams": 5,
+	"maxcomplexity": 20,
+	"newcap": true,
+	"noarg": true,
+	"noempty": true,
+	"node": true,
+	"strict": true,
+	"sub": true,
+	"supernew": true,
+	"trailing": true,
+	"undef": true,
+	"white": true,
+	"predef":
+	[
+		"ncss"
+	]
+}

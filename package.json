@@ -1,0 +1,29 @@
+{
+	"name": "ncss",
+	"description": "NCSS is a naming convention standard",
+	"version": "1.7.1",
+	"homepage": "http://ncss.redaxmedia.com.com",
+	"license": "GPL-3.0",
+	"author":
+	{
+		"name": "Henry Ruhs",
+		"url": "http://redaxmedia.com"
+	},
+	"bugs":
+	{
+		"url": "http://github.com/redaxmedia/ncss/issues"
+	},
+	"devDependencies":
+	{
+		"grunt": "1.0.1",
+	  	"grunt-bookmarklet-wrapper": "1.2.0",
+	 	"grunt-contrib-jshint": "1.0.0",
+		"grunt-contrib-uglify": "1.0.1",
+		"grunt-jsonlint": "1.1.0",
+		"grunt-shell": "1.3.0"
+	},
+	"scripts":
+	{
+		"test": "grunt --verbose"
+	}
+}

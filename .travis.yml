@@ -1,0 +1,8 @@
+language: node_js
+
+install:
+- npm install
+- npm install --global grunt-cli
+
+script:
+- npm test
