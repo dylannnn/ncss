@@ -93,7 +93,7 @@
 					if(!element[i].validClass)
 					{
 						element[i].style = 'outline: 3px dashed rgba(255, 25, 25, 0.5)';
-						console.error(className + ' (' + wordingArray.invalidClass + ')');
+						console.error(tagName + '.' + className + ' (' + wordingArray.invalidClass + ')');
 					}
 					else if(!element[i].validTag)
 					{
