@@ -238,7 +238,7 @@ Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 		</tr>
 		<tr>
 			<td>text-</td>
-			<td>span, p</td>
+			<td>em, small, span, strong, p</td>
 			<td>.text-content</td>
 		</tr>
 		<tr>
@@ -253,7 +253,7 @@ Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 		</tr>
 		<tr>
 			<td>wrapper-</td>
-			<td>div, section</td>
+			<td>*</td>
 			<td>.wrapper-content</td>
 		</tr>
 	</tbody>

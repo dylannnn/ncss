@@ -5,52 +5,179 @@
 	var elementObject = doc.getElementsByTagName('*'),
 		namespaceArray = prompt('Enter one or multiple namespaces', 'rs- rs-admin-').split(' '),
 		prefixArray =
-		[
-			'content',
-			'address',
-			'body',
-			'footer',
-			'header',
-			'main',
-			'navigation',
-			'section',
-			'sidebar',
-			'component-',
-			'audio',
-			'box',
-			'break',
-			'button',
-			'code',
-			'col',
-			'data',
-			'field',
-			'form',
-			'frame',
-			'image',
-			'item',
-			'label',
-			'link',
-			'list',
-			'modal',
-			'overlay',
-			'shape',
-			'set',
-			'table',
-			'row',
-			'text',
-			'title',
-			'video',
-			'wrapper',
-			'is-',
-			'fn-',
-			'has-',
-			'js-'
-		],
+		{
+			'content':
+			[
+				'article'
+			],
+			'address':
+			[
+				'address'
+			],
+			'body':
+			[
+				'body'
+			],
+			'footer':
+			[
+				'footer'
+			],
+			'header':
+			[
+				'header'
+			],
+			'main':
+			[
+				'main'
+			],
+			'navigation':
+			[
+				'nav'
+			],
+			'section':
+			[
+				'section'
+			],
+			'sidebar':
+			[
+				'aside'
+			],
+			'component-': null,
+			'audio':
+			[
+				'audio'
+			],
+			'box':
+			[
+				'blockquote',
+				'div'
+			],
+			'break':
+			[
+				'hr'
+			],
+			'button':
+			[
+				'a',
+				'button'
+			],
+			'code':
+			[
+				'code',
+				'pre'
+			],
+			'col':
+			[
+				'td',
+				'th'
+			],
+			'data':
+			[
+				'datalist'
+			],
+			'field':
+			[
+				'input',
+				'select',
+				'textarea'
+			],
+			'form':
+			[
+				'form'
+			],
+			'frame':
+			[
+				'iframe'
+			],
+			'image':
+			[
+				'img',
+				'object',
+				'svg'
+			],
+			'item':
+			[
+				'dd',
+				'dt',
+				'li'
+			],
+			'label':
+			[
+				'label',
+				'legend'
+			],
+			'link':
+			[
+				'a'
+			],
+			'list':
+			[
+				'dl',
+				'ol',
+				'ul'
+			],
+			'modal':
+			[
+				'div'
+			],
+			'overlay':
+			[
+				'div'
+			],
+			'shape':
+			[
+				'cicle',
+				'path',
+				'rect',
+				'symbol',
+				'use'
+			],
+			'set':
+			[
+				'fieldset'
+			],
+			'table':
+			[
+				'table'
+			],
+			'row':
+			[
+				'tr'
+			],
+			'text':
+			[
+				'em',
+				'small',
+				'span',
+				'strong',
+				'p'
+			],
+			'title':
+			[
+				'h1',
+				'h2',
+				'h3',
+				'h4',
+				'h5',
+				'h6'
+			],
+			'video':
+			[
+				'iframe',
+				'video'
+			],
+			'wrapper': null,
+			'is-': null,
+			'fn-': null,
+			'has-': null,
+			'js-': null
+		},
 		providerArray = [],
 		resultArray = [],
-		resultObject,
+		providerKey,
 		classArray,
 		className,
+		tagName,
 		i,
 		j,
 		k;
@@ -61,15 +188,18 @@
 	{
 		for (var j in prefixArray)
 		{
-			providerArray.push(namespaceArray[i] + prefixArray[j]);
+			providerKey = namespaceArray[i] + j;
+			providerArray[providerKey] = prefixArray[j];
 		}
 	}
 
-	/* proccess element */
+	/* process element */
 
 	for (i in elementObject)
 	{
+		resultArray[i] = resultArray[i] || {};
 		classArray = elementObject[i].className ? elementObject[i].className.split(' ') : null;
+		tagName = elementObject[i].tagName ? elementObject[i].tagName.toLowerCase() : null;
 		for (j in classArray)
 		{
 			className = classArray[j];
@@ -77,34 +207,34 @@
 			{
 				for (k in providerArray)
 				{
-					if (className.startsWith(providerArray[k]))
+					if (className.startsWith(k))
 					{
-						resultArray[className] = true;
+						resultArray[i] =
+						{
+							validClass: true,
+							validTag: providerArray[k] ? providerArray[k].indexOf(tagName) > -1 : true
+						};
+
 					}
-					else if (!resultArray[className])
+					else if (!resultArray[i].validClass)
 					{
-						resultArray[className] = false;
+						resultArray[i] =
+						{
+							validClass: false
+						};
 					}
 				}
-			}
-		}
-	}
-
-	/* proccess result */
-
-	for (i in resultArray)
-	{
-		if (!resultArray[i])
-		{
-			resultObject = doc.getElementsByClassName(i);
-			for (j in resultObject)
-			{
-				if (typeof resultObject[j] === 'object')
+				if(!resultArray[i].validClass)
 				{
-					resultObject[j].style = 'outline: 3px dashed rgba(255, 25, 25, 0.5)';
+					elementObject[i].style = 'outline: 3px dashed rgba(255, 25, 25, 0.5)';
+					 console.error(className + ' (invalid class)');
+				}
+				else if(!resultArray[i].validTag)
+				{
+					elementObject[i].style = 'outline: 3px dashed rgba(255, 170, 25, 0.5)';
+					console.warn(className + ' (invalid <' + tagName + '> tag)');
 				}
 			}
-			console.warn(i);
 		}
 	}
 })(document);
