@@ -21,13 +21,22 @@
 
 	ncss.version = '1.0.0';
 
+	/* indicator */
+
+	ncss.indicatorArray =
+	{
+		invalidClass: 'outline: 3px dashed rgba(255, 25, 25, 0.5)',
+		invalidTag: 'outline: 3px dashed rgba(255, 170, 25, 0.5)'
+	};
+
 	/* wording */
 
 	ncss.wordingArray =
 	{
 		enterNamespace: 'Enter one or multiple namespaces',
 		invalidClass: 'invalid class',
-		invalidTag: 'invalid tag'
+		invalidTag: 'invalid tag',
+		issuesFound: 'issues found'
 	};
 
 	/* prefix */

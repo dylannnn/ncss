@@ -54,9 +54,10 @@
 
 	/* @section 1.2 validate element */
 
-	ncss.validateElement = function (element, providerArray, wordingArray)
+	ncss.validateElement = function (element, providerArray, indicatorArray, wordingArray)
 	{
-		var classArray,
+		var counter = 0,
+			classArray,
 			className,
 			tagName,
 			i,
@@ -88,21 +89,24 @@
 						}
 					}
 
-					/* render indicators */
+					/* indicator and console */
 
 					if(!element[i].validClass)
-					{
-						element[i].style = 'outline: 3px dashed rgba(255, 25, 25, 0.5)';
-						console.error(tagName + '.' + className + ' (' + wordingArray.invalidClass + ')');
+					{						
+						element[i].style = indicatorArray.invalidClass;
+						console.warn(tagName + '.' + className + ' (' + wordingArray.invalidClass + ')');
+						counter++;
 					}
 					else if(!element[i].validTag)
 					{
-						element[i].style = 'outline: 3px dashed rgba(255, 170, 25, 0.5)';
+						element[i].style = indicatorArray.invalidTag;
 						console.warn(tagName + '.' + className + ' (' + wordingArray.invalidTag + ')');
+						counter++;
 					}
 				}
 			}
-		}
+		}		
+		console.info(counter + ' ' + wordingArray.issuesFound);
 	};
 
 	/* @section 1.3 init */
@@ -110,7 +114,7 @@
 	ncss.init = function ()
 	{
 		ncss.providerArray = ncss.createProvider(ncss.prefixArray, ncss.namespaceArray);
-		ncss.validateElement(ncss.element, ncss.providerArray, ncss.wordingArray);
+		ncss.validateElement(ncss.element, ncss.providerArray, ncss.indicatorArray, ncss.wordingArray);
 	};
 
 	/* init */

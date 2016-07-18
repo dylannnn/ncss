@@ -57,9 +57,9 @@ module.exports = function (grunt)
 			{
 				src:
 				[
-					'dist/scripts/ncss.min.js'
+					'assets/scripts/bookmarklet.js'
 				],
-				dest: 'dist/scripts/bookmarklet.js'
+				dest: 'dist/scripts/bookmarklet.min.js'
 			}
 		},
 		shell:
