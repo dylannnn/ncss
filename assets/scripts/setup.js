@@ -36,7 +36,7 @@
 		enterNamespace: 'Enter one or multiple namespaces',
 		invalidClass: 'invalid class',
 		invalidTag: 'invalid tag',
-		issuesFound: 'issues found'
+		issueFound: 'issues found'
 	};
 
 	/* prefix */

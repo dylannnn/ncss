@@ -58,7 +58,8 @@
 
 	ncss.validateElement = function (element, providerArray, indicatorArray, wordingArray)
 	{
-		var counter = 0,
+		var providerTotal = Object.keys(ncss.providerArray).length,
+			issueCounter = 0,
 			classArray,
 			className,
 			tagName,
@@ -79,36 +80,41 @@
 			{
 				className = classArray[j];
 				if (className.length)
-				{					
+				{
+					element[i].invalidClass = 0;
+
 					/* process provider */
-					
+
 					for (k in providerArray)
 					{
 						if (className.startsWith(k))
 						{
-							element[i].validClass = true;
 							element[i].validTag = providerArray[k] ? providerArray[k].indexOf(tagName) > -1 : true;
+						}
+						else
+						{
+							element[i].invalidClass++;
 						}
 					}
 
 					/* indicator and console */
 
-					if (!element[i].validClass)
+					if (element[i].invalidClass >= providerTotal)
 					{
 						element[i].style = indicatorArray.invalidClass;
 						console.warn(tagName + '.' + classArray.join('.') + ' (' + wordingArray.invalidClass + ')');
-						counter++;
+						issueCounter++;
 					}
 					else if (!element[i].validTag)
 					{
 						element[i].style = indicatorArray.invalidTag;
 						console.warn(tagName + '.' + classArray.join('.') + ' (' + wordingArray.invalidTag + ')');
-						counter++;
+						issueCounter++;
 					}
 				}
 			}
 		}
-		console.info(counter + ' ' + wordingArray.issuesFound);
+		console.info(issueCounter + ' ' + wordingArray.issueFound);
 	};
 
 	/* @section 1.3 init */
