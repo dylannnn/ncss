@@ -194,7 +194,7 @@ Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 		</tr>
 		<tr>
 			<td>image-</td>
-			<td>img, object, picture svg</td>
+			<td>img, object, picture, svg</td>
 			<td>.image-content</td>
 		</tr>
 		<tr>
@@ -374,7 +374,7 @@ Functional classes
 
 Functional classes using **pure CSS** are marked with the <code>is</code>, <code>no</code>, <code>has</code> and <code>fn</code> prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand can be identified by the <code>js</code> prefix. Each of them should never have styles for painting, use an additional **type** class for this purpose.
 
-Syntax: <code>.is-{state}</code>, <code>.no-{feature}</code>, <code>.has-{context}</code> and <code>.fn-{action}</code>
+Syntax: <code>.is-{state}</code>, <code>.has-{context}</code>, <code>.no-{feature}</code> and <code>.fn-{action}</code>
 
 Syntax: <code>.js-{action}</code> and <code>.js-{context}</code>
 
