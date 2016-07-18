@@ -59,6 +59,7 @@
 	ncss.validateElement = function (element, providerArray, indicatorArray, wordingArray)
 	{
 		var providerTotal = Object.keys(ncss.providerArray).length,
+			invalidCounter = 0,
 			issueCounter = 0,
 			classArray,
 			className,
@@ -81,7 +82,7 @@
 				className = classArray[j];
 				if (className.length)
 				{
-					element[i].invalidClass = 0;
+					invalidCounter = 0;
 
 					/* process provider */
 
@@ -93,13 +94,13 @@
 						}
 						else
 						{
-							element[i].invalidClass++;
+							element[i].validClass = ++invalidCounter < providerTotal;
 						}
 					}
 
 					/* indicator and console */
 
-					if (element[i].invalidClass >= providerTotal)
+					if (!element[i].validClass)
 					{
 						element[i].style = indicatorArray.invalidClass;
 						console.warn(tagName + '.' + classArray.join('.') + ' (' + wordingArray.invalidClass + ')');
