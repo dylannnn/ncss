@@ -9,7 +9,7 @@ Getting started
 
 - Add a fresh entry to your bookmark toolbar
 - Enter NCSS to the <code>name</code> field
-- Paste the content of [bookmarklet.js](/dist/scripts/bookmarklet.min.js) to the <code>address</code> field
+- Paste the content of [bookmarklet.min.js](/dist/scripts/bookmarklet.min.js) to the <code>address</code> field
 - Launch the NCSS bookmarklet on a website
 
 
