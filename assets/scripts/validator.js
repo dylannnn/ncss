@@ -93,21 +93,21 @@
 
 					/* indicator and console */
 
-					if(!element[i].validClass)
-					{						
+					if (!element[i].validClass)
+					{
 						element[i].style = indicatorArray.invalidClass;
-						console.warn(tagName + '.' + className + ' (' + wordingArray.invalidClass + ')');
+						console.warn(tagName + '.' + classArray.join('.') + ' (' + wordingArray.invalidClass + ')');
 						counter++;
 					}
-					else if(!element[i].validTag)
+					else if (!element[i].validTag)
 					{
 						element[i].style = indicatorArray.invalidTag;
-						console.warn(tagName + '.' + className + ' (' + wordingArray.invalidTag + ')');
+						console.warn(tagName + '.' + classArray.join('.') + ' (' + wordingArray.invalidTag + ')');
 						counter++;
 					}
 				}
 			}
-		}		
+		}
 		console.info(counter + ' ' + wordingArray.issuesFound);
 	};
 
