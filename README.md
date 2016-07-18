@@ -447,7 +447,7 @@ Syntax: <code>.wrapper-{type}</code>
 	<tbody>
 		<tr>
 			<td>wrapper-</td>
-			<td>div, section</td>
+			<td>*</td>
 			<td>.wrapper-body</td>
 		</tr>
 	</tbody>
