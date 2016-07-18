@@ -43,6 +43,8 @@
 
 	ncss.prefixArray =
 	{
+		/* structural classes */
+
 		'content':
 		[
 			'article'
@@ -79,10 +81,17 @@
 		[
 			'aside'
 		],
+
+		/* component classes */
+
 		'component-': null,
+
+		/* type classes */
+
 		'audio':
 		[
-			'audio'
+			'audio',
+			'object'
 		],
 		'box':
 		[
@@ -97,6 +106,10 @@
 		[
 			'a',
 			'button'
+		],
+		'caption':
+		[
+			'caption'
 		],
 		'code':
 		[
@@ -130,6 +143,7 @@
 		[
 			'img',
 			'object',
+			'picture',
 			'svg'
 		],
 		'item':
@@ -161,6 +175,10 @@
 		[
 			'div'
 		],
+		'set':
+		[
+			'fieldset'
+		],
 		'shape':
 		[
 			'cicle',
@@ -168,10 +186,6 @@
 			'rect',
 			'symbol',
 			'use'
-		],
-		'set':
-		[
-			'fieldset'
 		],
 		'table':
 		[
@@ -200,13 +214,17 @@
 		],
 		'video':
 		[
-			'iframe',
+			'object',
 			'video'
 		],
 		'wrapper': null,
-		'is-': null,
-		'fn-': null,
+
+		/* functional classes */
+
+		'is-': null,	
 		'has-': null,
+		'no-': null,
+		'fn-': null,
 		'js-': null
 	};
 })(window);

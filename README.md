@@ -139,7 +139,7 @@ Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 	<tbody>
 		<tr>
 			<td>audio-</td>
-			<td>audio</td>
+			<td>audio, object</td>
 			<td>.audio-content</td>
 		</tr>
 		<tr>
@@ -156,6 +156,11 @@ Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 			<td>button-</td>
 			<td>a, button</td>
 			<td>.button-content</td>
+		</tr>
+		<tr>
+			<td>caption-</td>
+			<td>caption</td>
+			<td>.caption-content</td>
 		</tr>
 		<tr>
 			<td>code-</td>
@@ -189,7 +194,7 @@ Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 		</tr>
 		<tr>
 			<td>image-</td>
-			<td>img, object, svg</td>
+			<td>img, object, picture svg</td>
 			<td>.image-content</td>
 		</tr>
 		<tr>
@@ -223,14 +228,14 @@ Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 			<td>.overlay-content</td>
 		</tr>
 		<tr>
-			<td>shape-</td>
-			<td>cicle, path, rect, symbol, use</td>
-			<td>.shape-content</td>
-		</tr>
-		<tr>
 			<td>set-</td>
 			<td>fieldset</td>
 			<td>.set-content</td>
+		</tr>
+		<tr>
+			<td>shape-</td>
+			<td>cicle, path, rect, symbol, use</td>
+			<td>.shape-content</td>
 		</tr>
 		<tr>
 			<td>table-</td>
@@ -254,7 +259,7 @@ Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 		</tr>
 		<tr>
 			<td>video-</td>
-			<td>iframe, video</td>
+			<td>object, video</td>
 			<td>.video-content</td>
 		</tr>
 		<tr>
@@ -367,9 +372,9 @@ Syntax: <code>.{type}-{position}</code> and <code>.{type}-{context}-{position}</
 Functional classes
 ------------------
 
-Functional classes using **pure CSS** are marked with the <code>is</code>, <code>fn</code> and <code>has</code> prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand can be identified by the <code>js</code> prefix. Both should never have styles for painting, use an additional **type** class for this purpose.
+Functional classes using **pure CSS** are marked with the <code>is</code>, <code>no</code>, <code>has</code> and <code>fn</code> prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand can be identified by the <code>js</code> prefix. Each of them should never have styles for painting, use an additional **type** class for this purpose.
 
-Syntax: <code>.is-{state}</code>, <code>.fn-{action}</code> and <code>.has-{context}</code>
+Syntax: <code>.is-{state}</code>, <code>.no-{feature}</code>, <code>.has-{context}</code> and <code>.fn-{action}</code>
 
 Syntax: <code>.js-{action}</code> and <code>.js-{context}</code>
 
@@ -388,14 +393,19 @@ Syntax: <code>.js-{action}</code> and <code>.js-{context}</code>
 			<td>.is-active</td>
 		</tr>
 		<tr>
-			<td>fn-</td>
-			<td>*</td>
-			<td>.fn-clearfix</td>
-		</tr>
-		<tr>
 			<td>has-</td>
 			<td>*</td>
 			<td>.has-tooltip</td>
+		</tr>
+		<tr>
+			<td>no-</td>
+			<td>*</td>
+			<td>.no-webgl</td>
+		</tr>
+		<tr>
+			<td>fn-</td>
+			<td>*</td>
+			<td>.fn-clearfix</td>
 		</tr>
 		<tr>
 			<td>js-</td>
