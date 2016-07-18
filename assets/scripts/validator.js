@@ -28,10 +28,7 @@
 
 	ncss.namespace = win.prompt(ncss.wordingArray.enterNamespace, localStorage.getItem('namespace-' + location.host) || '');
 	ncss.namespaceArray = ncss.namespace.split(' ');
-	if (ncss.namespaceArray.length)
-	{
-		localStorage.setItem('namespace-' + location.host, ncss.namespace);
-	}
+	localStorage.setItem('namespace-' + location.host, ncss.namespace);	
 
 	/* @section 1.1 create provider */
 
