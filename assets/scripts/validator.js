@@ -26,7 +26,12 @@
 
 	/* namespace */
 
-	ncss.namespaceArray = win.prompt(ncss.wordingArray.enterNamespace, 'rs- rs-admin-').split(' ');
+	ncss.namespace = win.prompt(ncss.wordingArray.enterNamespace, localStorage.getItem('namespace-' + location.host) || '');
+	ncss.namespaceArray = ncss.namespace.split(' ');
+	if (ncss.namespaceArray.length)
+	{
+		localStorage.setItem('namespace-' + location.host, ncss.namespace);
+	}
 
 	/* @section 1.1 create provider */
 
