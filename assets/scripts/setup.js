@@ -154,7 +154,10 @@
 		],
 		'label':
 		[
-			'label',
+			'label'
+		],
+		'legend':
+		[
 			'legend'
 		],
 		'link':
