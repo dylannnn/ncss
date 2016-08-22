@@ -204,8 +204,13 @@ Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 		</tr>
 		<tr>
 			<td>label-</td>
-			<td>label, legend</td>
+			<td>label</td>
 			<td>.label-content</td>
+		</tr>
+		<tr>
+			<td>legend-</td>
+			<td>legend</td>
+			<td>.legend-content</td>
 		</tr>
 		<tr>
 			<td>link-</td>
