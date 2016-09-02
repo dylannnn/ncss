@@ -72,7 +72,7 @@
 
 		for (i in element)
 		{
-			classArray = element[i].className ? element[i].className.split(' ') : null;
+			classArray = typeof element[i].className === 'string' ? element[i].className.split(' ') : null;
 			tagName = element[i].tagName ? element[i].tagName.toLowerCase() : null;
 
 			/* process class */
