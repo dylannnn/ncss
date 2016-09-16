@@ -178,6 +178,10 @@
 		[
 			'div'
 		],
+		'process':
+		[
+			'process'
+		],
 		'set':
 		[
 			'fieldset'
