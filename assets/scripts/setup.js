@@ -178,9 +178,9 @@
 		[
 			'div'
 		],
-		'process':
+		'progress':
 		[
-			'process'
+			'progress'
 		],
 		'set':
 		[

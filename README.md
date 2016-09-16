@@ -233,9 +233,9 @@ Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 			<td>.overlay-content</td>
 		</tr>
 		<tr>
-			<td>process-</td>
-			<td>process</td>
-			<td>.process-content</td>
+			<td>progress-</td>
+			<td>progress</td>
+			<td>.progress-content</td>
 		</tr>
 		<tr>
 			<td>set-</td>
