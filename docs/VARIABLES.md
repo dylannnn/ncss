@@ -62,7 +62,7 @@ Fonts
 {
 	--font-primary: arial, sans-serif;
 	--font-code: monospace, arial, sans-serif;
-	--font-icon: 'icon';
+	--font-icon: icon;
 }
 </pre>
 
