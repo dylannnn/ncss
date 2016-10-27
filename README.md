@@ -1,7 +1,3 @@
-![Named Cascading Style Sheets](https://dummyimage.com/1000x300/5fb404/ffffff&text=Named+Cascading+Style+Sheets)
-![Naming convention for semantic CSS](http://dummyimage.com/1000x100/5fb404/ffffff&text=Naming+convention+for+semantic+CSS)
-
-
 NCSS
 ====
 
