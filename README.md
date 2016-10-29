@@ -233,7 +233,7 @@ Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 			<td>.progress-content</td>
 		</tr>
 		<tr>
-			<td>box-</td>
+			<td>quote-</td>
 			<td>blockquote, citie</td>
 			<td>.quote-content</td>
 		</tr>
