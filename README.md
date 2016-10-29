@@ -139,7 +139,7 @@ Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 		</tr>
 		<tr>
 			<td>box-</td>
-			<td>blockquote, div</td>
+			<td>div</td>
 			<td>.box-content</td>
 		</tr>
 		<tr>
@@ -231,6 +231,11 @@ Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
 			<td>progress-</td>
 			<td>progress</td>
 			<td>.progress-content</td>
+		</tr>
+		<tr>
+			<td>box-</td>
+			<td>blockquote, citie</td>
+			<td>.quote-content</td>
 		</tr>
 		<tr>
 			<td>set-</td>

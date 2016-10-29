@@ -77,11 +77,7 @@ module.exports = function (grunt)
 
 	/* load tasks */
 
-	grunt.loadNpmTasks('grunt-bookmarklet-wrapper');
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-jsonlint');
-	grunt.loadNpmTasks('grunt-shell');
+	require('load-grunt-tasks')(grunt);
 
 	/* register tasks */
 

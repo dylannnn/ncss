@@ -95,7 +95,6 @@
 		],
 		'box':
 		[
-			'blockquote',
 			'div'
 		],
 		'break':
@@ -181,6 +180,11 @@
 		'progress':
 		[
 			'progress'
+		],
+		'quote':
+		[
+			'blockquote',
+			'citie'
 		],
 		'set':
 		[
