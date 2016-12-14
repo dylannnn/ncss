@@ -15,12 +15,12 @@ HTML
 <main class="fb-main fb-wrapper">
 
 	<article id="content" class="fb-content">
-		<h2 class="fb-title fb-title-content">Headline</h2>
+		<h2 class="fb-title-content">Headline</h2>
 		<div class="fb-box-content">Box</div>
 	</article>
 
 	<aside id="sidebar" class="fb-sidebar">
-		<h3 class="fb-title fb-title-sidebar">Headline</h3>
+		<h3 class="fb-title-sidebar">Headline</h3>
 		<p class="fb-text-sidebar">Text</p>
 	</aside>
 
