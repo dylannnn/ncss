@@ -488,5 +488,6 @@ Further reading
 ---------------
 
 - [Bookmarklet](/docs/BOOKMARKLET.md)
-- [Examples](/docs/LAYOUT.md)
+- [Layout](/docs/LAYOUT.md)
+- [Menu](/docs/MENU.md)
 - [Variables](/docs/VARIABLES.md)
