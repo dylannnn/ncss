@@ -1,5 +1,5 @@
-Examples
-========
+Layout
+======
 
 > A layout example using the NCSS convention.
 
