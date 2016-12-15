@@ -1,5 +1,5 @@
-Examples
-========
+Menu
+====
 
 > A simple menu example using the NCSS convention.
 
