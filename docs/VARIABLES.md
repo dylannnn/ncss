@@ -7,7 +7,7 @@ Variables
 Colors
 ------
 
-The color palette is a set of fixed hex values, use the <code>gray()</code> function over <code>--color-gray</code> variables.
+The color palette is a set of fixed hex values, use the `gray()` function over `--color-gray` variables.
 
 ```
 :root

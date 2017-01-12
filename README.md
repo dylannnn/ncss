@@ -41,7 +41,7 @@ Structural classes
 
 Structural classes provide a **semantic context** for the underlaying elements and are preferably utilized to define a layout.
 
-Syntax: <code>.{context}</code> and <code>.{context}-{name}</code>
+Syntax: `.{context}` and `.{context}-{name}`
 
 <table>
 	<thead>
@@ -96,7 +96,7 @@ Component classes
 
 Component classes provide a **group context** for the underlaying elements and are preferably utilized to define a working unit.
 
-Syntax: <code>.component-{name}</code>
+Syntax: `.component-{name}`
 
 <table>
 	<thead>
@@ -121,7 +121,7 @@ Type classes
 
 Type classes are the foundation to write **re-usable**, **modular** and **semantic** CSS - tell the reader what kind of elements, tags and sections are affected. Keep in mind that structural tags are rather unsuitable to contain a **type** prefix.
 
-Syntax: <code>.{type}</code> and <code>.{type}-{context}</code>
+Syntax: `.{type}` and `.{type}-{context}`
 
 <table>
 	<thead>
@@ -286,11 +286,11 @@ Modifier classes
 
 There is no limitation to extend your **type classes** with individual **state**, **size** and **position** modifier. Proper handling of **context** and **type** should prevent the need of adjoining classes.
 
-Syntax: <code>.{type}-{state}</code> and <code>.{type}-{context}-{state}</code>
+Syntax: `.{type}-{state}` and `.{type}-{context}-{state}`
 
-Syntax: <code>.{type}-{size}</code> and <code>.{type}-{context}-{size}</code>
+Syntax: `.{type}-{size}` and `.{type}-{context}-{size}`
 
-Syntax: <code>.{type}-{position}</code> and <code>.{type}-{context}-{position}</code>
+Syntax: `.{type}-{position}` and `.{type}-{context}-{position}`
 
 <table>
 	<thead>
@@ -382,11 +382,11 @@ Syntax: <code>.{type}-{position}</code> and <code>.{type}-{context}-{position}</
 Functional classes
 ------------------
 
-Functional classes using **pure CSS** are marked with the <code>is</code>, <code>no</code>, <code>has</code> and <code>fn</code> prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand can be identified by the <code>js</code> prefix. Each of them should never have styles for painting, use an additional **type** class for this purpose.
+Functional classes using **pure CSS** are marked with the `is`, `no`, `has` and `fn` prefix. **Javascript enhanced** and therefore **re-usable** classes on the other hand can be identified by the `js` prefix. Each of them should never have styles for painting, use an additional **type** class for this purpose.
 
-Syntax: <code>.is-{state}</code>, <code>.has-{context}</code>, <code>.no-{feature}</code> and <code>.fn-{action}</code>
+Syntax: `.is-{state}`, `.has-{context}`, `.no-{feature}` and `.fn-{action}`
 
-Syntax: <code>.js-{action}</code> and <code>.js-{context}</code>
+Syntax: `.js-{action}` and `.js-{context}`
 
 <table>
 	<thead>
@@ -431,7 +431,7 @@ Namespaces
 
 Consider to pick a unique namespace once you provide a framework to third party applications or generally want to prevent naming conflicts inside your project. Never mix up namespaces and follow the pretended naming of third party components.
 
-Syntax: <code>.{namespace}-{type}</code> and <code>.{namespace}-{context}</code>
+Syntax: `.{namespace}-{type}` and `.{namespace}-{context}`
 
 <table>
 	<thead>
@@ -454,7 +454,7 @@ Syntax: <code>.{namespace}-{type}</code> and <code>.{namespace}-{context}</code>
 Exceptions
 ----------
 
-Syntax: <code>.wrapper-{type}</code>
+Syntax: `.wrapper-{type}`
 
 <table>
 	<thead>
