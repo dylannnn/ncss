@@ -84,7 +84,7 @@ Syntax: `.{context}` and `.{context}-{name}`
 			<td>.section</td>
 		</tr>
 		<tr>
-			<td>side</td>
+			<td>aside</td>
 			<td>.sidebar</td>
 		</tr>
 	</tbody>
