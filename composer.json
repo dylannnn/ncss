@@ -2,7 +2,7 @@
 	"name": "redaxmedia/ncss",
 	"description": "Naming convention for semantic CSS",
 	"version": "1.0.1",
-	"homepage": "http://ncss.redaxmedia.com",
+	"homepage": "https://ncss.redaxmedia.com",
 	"license": "GPL-3.0",
 	"require":
 	{
