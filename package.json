@@ -2,16 +2,16 @@
 	"name": "ncss",
 	"description": "Naming convention for semantic CSS",
 	"version": "1.0.0",
-	"homepage": "http://ncss.redaxmedia.com.com",
+	"homepage": "https://ncss.redaxmedia.com.com",
 	"license": "GPL-3.0",
 	"author":
 	{
 		"name": "Henry Ruhs",
-		"url": "http://redaxmedia.com"
+		"url": "https://redaxmedia.com"
 	},
 	"bugs":
 	{
-		"url": "http://github.com/redaxmedia/ncss/issues"
+		"url": "https://github.com/redaxmedia/ncss/issues"
 	},
 	"devDependencies":
 	{
